@@ -1,0 +1,111 @@
+/* card info styling */
+.site_fake_scrollbar {
+  display: none;
+}
+/* show only on hover-capable devices (desktop) */
+
+@media (hover: hover) {
+  .site_fake_scrollbar {
+    display: block;
+  }
+  html,
+  body {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  html {
+    scrollbar-width: none;
+  }
+
+  .card_info {
+    display: none;
+  }
+  /* jjjj */
+  @media (min-width: 1024px) {
+    /* .lol {
+      height: 2854px;
+    } */
+
+    .card_container {
+      height: 359px;
+    }
+
+    .lol {
+      height: 3860px;
+    }
+  }
+
+  .card_container {
+    transform: translateZ(0);
+  }
+}
+
+.project_info_content span {
+  position: relative;
+  display: inline-block;
+}
+
+.project_info_content .bg {
+  position: absolute;
+  inset: 0;
+  background-color: #d3fd50;
+  z-index: -1;
+  transform-origin: center;
+  /* transform: scaleY(0); */
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) and (min-aspect-ratio: 1/1) {
+  .card {
+    margin-bottom: 0px;
+  }
+
+  .card_figure {
+    position: absolute;
+    top: 0;
+    inset: 0;
+  }
+  .card_image {
+    position: absolute;
+    top: 0;
+  }
+}
+
+@media (min-width: 2000px) {
+  .project-info-card-top {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    top: 4.1rem;
+    border-bottom: 4px solid black !important;
+  }
+
+  .project-info-span-height {
+    border-top: 3px solid black !important;
+  }
+
+  .project-info-span {
+    font-size: 2.4rem;
+  }
+
+  .project-info-overlay {
+    height: 68px;
+  }
+}
+
+/* works card container  */
+
+@media (min-width: 1600px) and (max-width: 2559px) {
+  .lol {
+    height: 4775px;
+  }
+}
+@media (min-width: 2560px) {
+  .lol {
+    height: 7678px;
+  }
+}

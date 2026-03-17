@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>K72 Agency</title>
+
+    <meta name="description" content="Creative digital agency." />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#000000" />
+
+    <link
+      rel="icon"
+      href="https://ik.imagekit.io/rayan8422/favicon-32x32.png"
+    />
+
+    <link
+      rel="icon"
+      href="https://ik.imagekit.io/rayan8422/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://ik.imagekit.io/rayan8422/apple-touch-icon.png"
+    />
+    <link rel="canonical" href="https://yourdomain.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="K72 Agency" />
+    <meta property="og:description" content="Creative digital agency." />
+    <meta
+      property="og:image"
+      content="https://ik.imagekit.io/rayan8422/og-image.png"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Fonts -->
+    <link
+      rel="preload"
+      href="/assets/Fonts/Lausanne-300.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/Fonts/Lausanne-500.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="/K72-app/src/styles/index.css" />
+
+    <style>
+      .c-loader {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        z-index: 850;
+        pointer-events: none;
+      }
+      .c-loader:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        background-color: #1d1d1d;
+        opacity: 0;
+        transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+      html:not(.is-loaded) .c-loader {
+        pointer-events: all;
+      }
+      html:not(.is-loaded) .c-loader:before {
+        opacity: 0.8;
+      }
+
+      .c-loader_col {
+        position: relative;
+        z-index: 10;
+        background-color: #000000;
+        height: 100%;
+        transform: scale3d(1, 0, 1);
+        transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transform-origin: center bottom;
+      }
+      html:not(.is-loaded) .c-loader_col {
+        transform: scale3d(1, 1, 1);
+        transform-origin: center top;
+      }
+      @media (min-width: 1000px) {
+        .c-loader_col {
+          width: calc((100vw - 13.125rem) * 4 / 20 + 2.5rem + 2px);
+          margin-left: -1px;
+        }
+        .c-loader_col:nth-child(3) {
+          width: calc((100vw - 13.125rem) * 6 / 20 + 3.75rem + 2px);
+        }
+        .c-loader_col:nth-child(4) {
+          width: calc((100vw - 13.125rem) * 3 / 20 + 1.875rem + 2px);
+        }
+        .c-loader_col:nth-child(5) {
+          width: calc((100vw - 13.125rem) * 3 / 20 + 2.5rem + 2px);
+        }
+        .c-loader_col:nth-child(5) {
+          transition-delay: 0.075s;
+        }
+        .c-loader_col:nth-child(4) {
+          transition-delay: 0.12s;
+        }
+        .c-loader_col:nth-child(3) {
+          transition-delay: 0.165s;
+        }
+        .c-loader_col:nth-child(2) {
+          transition-delay: 0.21s;
+        }
+        .c-loader_col:nth-child(1) {
+          transition-delay: 0.255s;
+        }
+      }
+      @media (max-width: 999px) {
+        .c-loader_col {
+          width: 33.3333333333%;
+          width: 33.3333333333%;
+          width: 33.3333333333%;
+        }
+        .c-loader_col:nth-child(2) {
+          transition-delay: 0.075s;
+        }
+        .c-loader_col:nth-child(1) {
+          transition-delay: 0.12s;
+        }
+        .c-loader_col:nth-child(0) {
+          transition-delay: 0.165s;
+        }
+      }
+
+      .c-loader_spinner {
+        position: absolute;
+        bottom: 0.625rem;
+        right: 0.625rem;
+        width: 3.125rem;
+        height: 1.7578125rem;
+        display: flex;
+        transform: scaleY(0);
+        transform-origin: center bottom;
+        transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        z-index: 20;
+      }
+      html:not(.is-loaded) .c-loader_spinner {
+        transform: scaleY(1);
+        transition-delay: 0.3s;
+      }
+      .c-loader_spinner div {
+        flex-grow: 1;
+        background-color: #ffffff;
+        animation: loaderSpinnerCol 1s cubic-bezier(0.215, 0.61, 0.355, 1)
+          infinite;
+        margin-left: -1px;
+      }
+      .c-loader_spinner div:nth-child(1) {
+        animation-delay: -0.1s;
+      }
+      .c-loader_spinner div:nth-child(2) {
+        animation-delay: -0.2s;
+      }
+      .c-loader_spinner div:nth-child(3) {
+        animation-delay: -0.3s;
+      }
+      .c-loader_spinner div:nth-child(4) {
+        animation-delay: -0.4s;
+      }
+
+      @keyframes loaderSpinnerCol {
+        0% {
+          transform: scale3d(1, 0.25, 1);
+          transform-origin: bottom center;
+        }
+        50% {
+          transform: scale3d(1, 1, 1);
+          transform-origin: bottom center;
+        }
+        100% {
+          transform: scale3d(1, 0.25, 1);
+          transform-origin: bottom center;
+        }
+      }
+      #initial-loader.hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+      /* paste your existing .c-loader spinner CSS here too */
+
+      /* Nav */
+      #html-loader-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 8px;
+        z-index: 999999;
+      }
+
+      /* SVG Logo */
+      #html-loader-nav svg {
+        cursor: pointer;
+        height: 44.5px;
+        font-weight: 500;
+        font-family: "lausanne2", sans-serif;
+        transition: fill 900ms ease-in-out;
+      }
+
+      @media (min-width: 768px) {
+        #html-loader-nav svg {
+          font-size: 15px;
+        }
+      }
+
+      @media (min-width: 1280px) {
+        #html-loader-nav {
+          padding: 10px;
+        }
+        #html-loader-nav svg {
+          font-size: 16px;
+          height: 48px;
+        }
+      }
+
+      @media (min-width: 1536px) {
+        #html-loader-nav svg {
+          height: 60px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="initial-loader" class="c-loader">
+      <div class="c-loader_spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="c-loader_col"><div></div></div>
+      <div class="c-loader_col"><div></div></div>
+      <div class="c-loader_col"><div></div></div>
+      <div class="c-loader_col"><div></div></div>
+      <div class="c-loader_col"><div></div></div>
+
+      <nav id="html-loader-nav">
+        <svg
+          id="site_logo_svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 103 44"
+        >
+          <path
+            fill="#ffffff"
+            d="M35.1441047,8.4486911 L58.6905011,8.4486911 L58.6905011,-1.3094819e-14 L35.1441047,-1.3094819e-14 L35.1441047,8.4486911 Z M20.0019577,0.000230366492 L8.83414254,25.3433089 L18.4876971,25.3433089 L29.5733875,0.000230366492 L20.0019577,0.000230366492 Z M72.5255345,0.000691099476 L72.5255345,8.44846073 L94.3991559,8.44846073 L94.3991559,16.8932356 L72.5275991,16.8932356 L72.5275991,19.5237906 L72.5255345,19.5237906 L72.5255345,43.9274346 L102.80937,43.9274346 L102.80937,35.4798953 L80.9357483,35.4798953 L80.9357483,25.3437696 L94.3996147,25.3428482 L94.3996147,16.8953089 L102.80937,16.8953089 L102.80937,0.000691099476 L72.5255345,0.000691099476 Z M-1.30398043e-14,43.9278953 L8.78642762,43.9278953 L8.78642762,0.0057591623 L-1.30398043e-14,0.0057591623 L-1.30398043e-14,43.9278953 Z M58.6849955,8.4486911 L43.1186904,43.9274346 L52.3166592,43.9274346 L67.9877996,8.4486911 L58.6849955,8.4486911 Z M18.4688864,25.3437696 L26.7045278,43.9278953 L36.2761871,43.9278953 L28.1676325,25.3375497 L18.4688864,25.3437696 Z"
+          />
+        </svg>
+      </nav>
+    </div>
+
+    <div id="root"></div>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
