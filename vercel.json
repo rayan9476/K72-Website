@@ -1,4 +1,4 @@
 {
   "name": "k72-agency",
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "rewrites": [{ "source": "/:path*", "destination": "/" }]
 }
