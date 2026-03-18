@@ -1,3 +1,4 @@
 {
+  "name": "k72-agency",
   "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
