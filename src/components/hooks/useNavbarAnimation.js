@@ -7,6 +7,7 @@ import { RouteChangeStairsContext } from "../../context/RouteChangeStairsContext
 import { useContext } from "react";
 gsap.defaults({ overwrite: "auto" });
 const useNavbarAnimation = (hoveredIndex) => {
+  /* eslint-disable react-hooks/exhaustive-deps */
   const navType = useNavigationType();
   // is hover logic start here
   const isHover = useIsHoverDevice();

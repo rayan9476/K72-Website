@@ -87,7 +87,7 @@ export default function useVideoModalAnimation({
         });
       }
     }
-  }, [isActiveVideo]);
+  }, [isActiveVideo, iframeRef, modalRef, videoRef]);
 
   useEffect(() => {
     const preventScroll = (e) => e.preventDefault();
@@ -104,7 +104,7 @@ export default function useVideoModalAnimation({
       document.body.style.overflow = "";
       document.removeEventListener("touchmove", preventScroll);
     };
-  }, [isActiveVideo, iframeRef, modalRef, videoRef]);
+  }, [isActiveVideo]);
 
   return { closeModal };
 }

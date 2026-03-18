@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 gsap.defaults({ overwrite: "auto" });
 export function useGsapNative({ scopeRef, setup, deps = [] }) {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useLayoutEffect(() => {
     if (!scopeRef?.current) return;
 
