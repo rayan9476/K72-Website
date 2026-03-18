@@ -2686,7 +2686,6 @@ export const projectInfo = [
       "https://ik.imagekit.io/rayan8422/Fruite_Project_Fruite_featured_bebitte.webp?tr=f-auto,w-20,q-10,bl-6",
 
     summaryTitle: ["Fruité All", "Good"],
-    summaryText: ["Fruité All", "Good"],
     summaryList: ["Advertising"],
     summaryText:
       "How do you sell a product with no added value in places where your target doesn’t go? In a declining market segment, you cut the crap and remind consumer that the only reason to drink Fruité is that:",

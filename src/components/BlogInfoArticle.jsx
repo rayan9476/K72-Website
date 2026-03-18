@@ -6,10 +6,8 @@ function BlogInfoArticle({ blogData }) {
   usePunchlineAnimation();
   // punchline animation ends here
 
-  if (!blogData) return null;
-
   const lines = useResponsiveTitle(blogData);
-
+  if (!blogData) return null;
   return (
     <>
       <article
