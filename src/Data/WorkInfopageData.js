@@ -1075,14 +1075,10 @@ export const projectInfo = [
       image1: {
         src: "https://ik.imagekit.io/rayan8422/Coup-Fumant_opto_thumbnail1.webp?tr=f-auto,w-1200,q-60",
         small:
-          "https://ik.imagekit.io/rayan8422/CCoup-Fumant_opto_thumbnail1.webpp?tr=f-auto,w-720,h-480,q-60",
+          "https://ik.imagekit.io/rayan8422/Coup-Fumant_opto_thumbnail1.webpp?tr=f-auto,w-720,h-480,q-60",
         placeholder:
           "https://ik.imagekit.io/rayan8422/Coup-Fumant_opto_thumbnail1.webp?tr=f-auto,w-20,q-10,bl-6",
 
-        small:
-          "https://ik.imagekit.io/rayan8422/Coup-Fumant_opto_thumbnail1.webp?tr=f-auto,w-720,h-480,q-60",
-        placeholder:
-          "https://ik.imagekit.io/rayan8422/Coup-Fumant_opto_thumbnail1.webp?tr=f-auto,w-20,q-10,bl-6",
         subtitle: "Opto-Réseau",
         title: "Opto-Réseau",
         href: "/en/work/opto-reseau",
