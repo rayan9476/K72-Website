@@ -17,14 +17,14 @@ const useBlogInfo = () => {
   const [BlogInfo, setBlogInfo] = useState(null);
 
   useEffect(() => {
+    if (!blogId) return null;
+
     const blogInfo =
       blogData.find((item) => normalize(item.title) === blogId) ||
       blogData2.find((item) => normalize(item.title) === blogId);
 
     setBlogInfo(blogInfo);
   }, [blogId]);
-
-  if (!blogId) return null;
 
   return BlogInfo;
 };

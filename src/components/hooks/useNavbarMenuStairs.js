@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 gsap.defaults({ overwrite: "auto" });
 const useNavbarMenuStairs = (ismenuOpen) => {
-  const [isFirstRender, setisFirstRender] = useState(true);
+  const isFirstRender = useRef(true);
   useEffect(() => {
     //  Skip animation on initial mount
-    if (isFirstRender === true) {
-      setisFirstRender(false);
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
       return;
     }
 
@@ -39,7 +39,7 @@ const useNavbarMenuStairs = (ismenuOpen) => {
         ease: "power2.inOut",
       });
     }
-  }, [ismenuOpen, isFirstRender, setisFirstRender]);
+  }, [ismenuOpen]);
 };
 
 export default useNavbarMenuStairs;
