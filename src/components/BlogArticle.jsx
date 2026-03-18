@@ -1,7 +1,7 @@
 import BlogFilters from "./BlogFilters";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-import { FilterContext } from "../context/FiterContext";
+import { FilterContext } from "../context/FilterContext.js";
 
 function BlogArticle({ blogData }) {
   const { activeFilter, setActiveFilter } = useContext(FilterContext);
