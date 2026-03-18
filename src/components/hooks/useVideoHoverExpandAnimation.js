@@ -71,5 +71,5 @@ export default function useVideoHoverExpandAnimation({
     }
 
     return () => tl.kill();
-  }, [IsHover, ImgRef, VideoRef, isHover]);
+  }, [IsHover, ImgRef, VideoRef, isHover, figureRef]);
 }

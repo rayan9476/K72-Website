@@ -6,8 +6,8 @@ import { useParams } from "react-router-dom";
 const useBlogInfo = () => {
   const { blogId } = useParams();
 
-  if (!blogId) return console.log("No blog title found");
   const [BlogInfo, setBlogInfo] = useState(null);
+  if (!blogId) return console.log("No blog title found");
 
   const normalize = (str) =>
     str

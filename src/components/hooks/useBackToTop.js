@@ -17,5 +17,5 @@ export function useBackToTop(buttonSelector = ".back_to_top_btn") {
     const btn = document.querySelector(buttonSelector);
     if (btn) btn.addEventListener("click", scrollToTop);
     return () => btn?.removeEventListener("click", scrollToTop);
-  }, []);
+  }, [buttonSelector]);
 }

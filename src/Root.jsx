@@ -35,7 +35,7 @@ export default function Root() {
     return () => {
       if (timeout) clearTimeout(timeout);
     };
-  }, [location.pathname]);
+  }, [location.pathname, setReady]);
   // for loader on route change logic start here
 
   // for loader on initailly load logic start here
@@ -65,7 +65,7 @@ export default function Root() {
       window.addEventListener("load", complete, { once: true });
       return () => window.removeEventListener("load", complete);
     }
-  }, []);
+  }, [setReady]);
   // for loader on initailly load logic ends here
 
   const isFirst = useRef(true);
@@ -77,7 +77,7 @@ export default function Root() {
       return;
     }
     setReady(false); // trigger loader only on route change
-  }, [location.pathname]);
+  }, [location.pathname, setReady]);
   // first render not works logic ends here
 
   return (

@@ -104,7 +104,7 @@ export default function useVideoModalAnimation({
       document.body.style.overflow = "";
       document.removeEventListener("touchmove", preventScroll);
     };
-  }, [isActiveVideo]);
+  }, [isActiveVideo, iframeRef, modalRef, videoRef]);
 
   return { closeModal };
 }

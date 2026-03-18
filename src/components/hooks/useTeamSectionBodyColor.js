@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
-gsap.defaults({ overwrite: "auto" }); 
+gsap.defaults({ overwrite: "auto" });
 export default function useTeamSectionBodyColor(agencyMainRef) {
   useEffect(() => {
     if (!agencyMainRef?.current) return;
@@ -36,7 +36,7 @@ export default function useTeamSectionBodyColor(agencyMainRef) {
         st?.kill();
       };
     }
-  }, []);
+  }, [agencyMainRef]);
 }
 
 // aniamtion funtion

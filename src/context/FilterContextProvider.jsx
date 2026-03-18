@@ -1,7 +1,5 @@
-import { createContext } from "react";
 import { useState } from "react";
-
-export const FilterContext = createContext(null);
+import { FilterContext } from "./FilterContext";
 
 export function FilterContextProvider({ children }) {
   const [activeFilter, setActiveFilter] = useState("All");

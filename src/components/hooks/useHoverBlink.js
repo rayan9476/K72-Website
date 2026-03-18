@@ -45,5 +45,5 @@ export function useHoverBlink(
         }
       }
     });
-  }, [hoveredIndex, hoveredImage, data, isHover]);
+  }, [hoveredIndex, hoveredImage, data, isHover, lockedInfo, parentSelector]);
 }

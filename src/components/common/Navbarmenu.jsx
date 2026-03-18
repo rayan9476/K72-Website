@@ -3,12 +3,9 @@ import { lazy, Suspense } from "react";
 const Navbarmenufooter = lazy(() => import("./Navbarmenufooter"));
 const Navbarmenustairs = lazy(() => import("./Navbarmenustairs"));
 import useMenuAnimation from "../hooks/useMenuAnimation";
-import { ReadyContext } from "../../context/ReadyContext";
-import { useContext } from "react";
 import { useIsHoverDevice } from "../hooks/useIsHoverDevice";
 import { menuItems } from "../../Data/MenuItemsData";
 function Navbarmenu({ ismenuOpen, setIsAnimating }) {
-  const { setReady } = useContext(ReadyContext);
   const isHover = useIsHoverDevice();
 
   //  animation for navmenu start here
@@ -35,13 +32,10 @@ function Navbarmenu({ ismenuOpen, setIsAnimating }) {
           >
             <div className="w-full overflow-hidden ">
               {menuItems?.map((item, idx) => {
-               
-
                 return (
                   <ul>
                     <Link key={idx} to={item.path}>
                       <li
-                       
                         id="animate_navmenu_links"
                         className={`animate_menu_item_1 overflow-hidden transform-gpu will-change-transform relative cursor-pointer pt-[11.5px] md:pt-[18px] xl:pt-5 2xl:pt-7 3xl:pt-12 pb-[1.5px] w-full text-center ${!isHover ? `${item.border}` : `${item.border2}`}  border-[#FFFFFF4D]`}
                       >

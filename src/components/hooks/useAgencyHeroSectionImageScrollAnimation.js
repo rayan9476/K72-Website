@@ -70,7 +70,7 @@ const useAgencyHeroSectionImageScrollAnimation = (containerRef) => {
       window.removeEventListener("resize", handleResize);
       ctx?.revert();
     };
-  }, [images]);
+  }, [containerRef]);
   return { imgeConatinerRef, imageRef };
 };
 

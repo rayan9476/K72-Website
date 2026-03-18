@@ -3,6 +3,8 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { images } from "../../Data/AgencyHeroSectionData";
 import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 gsap.defaults({ overwrite: "auto" });
 const useAgencyHeroImageSmallScreenAnimation = () => {
   const imageRef3 = useRef(null);

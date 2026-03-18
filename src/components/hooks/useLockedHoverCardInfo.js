@@ -18,7 +18,7 @@ export function useLockedHoverCardInfo({ hoveredIndex, hoveredImage, data }) {
       const newInfo = hoveredImage.side === 1 ? card.image1 : card.image2;
       setLockedInfo(newInfo);
     }
-  }, [hoveredIndex, hoveredImage]);
+  }, [hoveredIndex, hoveredImage, data, validIndex]);
 
   //  logic for dynamic info ends here
 

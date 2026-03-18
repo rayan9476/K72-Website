@@ -70,7 +70,7 @@ export default function useRouteChangeStairsAnimation() {
     });
 
     return () => ctx.revert();
-  }, [currentPath.pathname]);
+  }, [currentPath.pathname, isFirstRender, setIsRouteChanging]);
 
   return { stairsContainerRef2, appRef };
 }

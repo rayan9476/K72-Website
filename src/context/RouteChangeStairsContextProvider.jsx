@@ -1,6 +1,5 @@
-import { createContext, useState } from "react";
-export const RouteChangeStairsContext = createContext(false);
-
+import { useState } from "react";
+import { RouteChangeStairsContext } from "./RouteChangeStairsContext";
 export default function RouteChangeStairsContextProvider({ children }) {
   const [isRouteChanging, setIsRouteChanging] = useState(false);
 

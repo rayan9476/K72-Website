@@ -24,5 +24,5 @@ export default function useThumbnailScrollAnimation(thumbnailRef, data) {
         },
       },
     );
-  }, [data]);
+  }, [data, thumbnailRef]);
 }

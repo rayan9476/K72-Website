@@ -39,7 +39,7 @@ const useNavbarMenuStairs = (ismenuOpen) => {
         ease: "power2.inOut",
       });
     }
-  }, [ismenuOpen]);
+  }, [ismenuOpen, isFirstRender, setisFirstRender]);
 };
 
 export default useNavbarMenuStairs;

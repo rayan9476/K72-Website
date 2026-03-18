@@ -4,7 +4,7 @@ const Footer = lazy(() => import("../components/common/Footer"));
 import "../styles/workInfo.css";
 import "../styles/agency.css";
 import { useFakeScrollbar } from "../components/hooks/useFakeScrollbar";
-import { useRef, useEffect } from "react";
+import { useRef, useLayoutEffect } from "react";
 import { useSmoothScrollTo } from "../components/hooks/useSmoothScrollTo";
 import { useActiveOnClickOutside } from "../components/hooks/useActiveOnClickOutside";
 import ProjectInfoCardSection from "../components/common/ProjectInfoCardSection";
@@ -23,7 +23,6 @@ import useScrollToTop from "../components/hooks/useScrollToTop";
 import useScrollTriggerAfterLoad from "../components/hooks/useScrollTriggerAfterLoad";
 import useProjectInfo from "../components/hooks/useProjectInfo";
 import { useOurProjectCardRadiusAnimation } from "../components/hooks/useOurProjectCardRadiusAnimation";
-import { useLayoutEffect } from "react";
 import { useParams } from "react-router-dom";
 import NotFound from "../components/common/NotFound";
 

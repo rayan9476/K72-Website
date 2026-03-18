@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import { useLocation } from "react-router-dom";
 import { useMemo } from "react";
 import { useTeamMemberFadeOnScroll } from "./hooks/useTeamMemberFadeOnScroll";
 import AgencyTeamMembersContainer from "./common/AgencyTeamMembersContainer";
@@ -15,12 +14,10 @@ function AgencyTeamMembers() {
   useTeamMemberFadeOnScroll();
   // fade on animation ends here
 
-  const location = useLocation();
-
   const pairIndex = useMemo(() => {
     if (!PAIRS.length) return 0;
     return Math.floor(Math.random() * PAIRS?.length);
-  }, [PAIRS.length, location.pathname]);
+  }, [PAIRS.length]);
 
   const selectedPair = PAIRS[pairIndex] || [];
   const [FirstComp, SecondComp] = selectedPair;

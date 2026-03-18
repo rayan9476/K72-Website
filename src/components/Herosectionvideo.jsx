@@ -10,13 +10,14 @@ function Herosectionvideo({ type, syncRef }) {
   // insure both video play same time logic start here
   useEffect(() => {
     if (type === "inline" && syncRef?.current && videoRef.current) {
+      const syncEl = syncRef.current;
       const sync = () => {
-        videoRef.current.currentTime = syncRef.current.currentTime;
+        videoRef.current.currentTime = syncEl.currentTime;
       };
-      syncRef.current.addEventListener("timeupdate", sync);
-      return () => syncRef.current?.removeEventListener("timeupdate", sync);
+      syncEl.addEventListener("timeupdate", sync);
+      return () => syncEl.removeEventListener("timeupdate", sync);
     }
-  }, [type, syncRef]);
+  }, [type, syncRef, videoRef]);
   // insure both video play same time logic ends here
 
   return (

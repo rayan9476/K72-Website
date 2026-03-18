@@ -75,5 +75,5 @@ export function useHoverFlexVideoAnimation({
 
       window.removeEventListener("resize", handleResize);
     };
-  }, [isHover]);
+  }, [isHover, activeSize, inactiveSize, baseSize, selector]);
 }

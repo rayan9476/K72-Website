@@ -1,6 +1,5 @@
-import { createContext, useState } from "react";
-
-export const ReadyContext = createContext(false);
+import { useState } from "react";
+import { ReadyContext } from "./ReadyContext";
 
 function ReadyContextProvider({ children }) {
   const [ready, setReady] = useState(false);

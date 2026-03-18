@@ -91,5 +91,5 @@ export function useFakeScrollbar(thumbRef, options = {}) {
 
       if (fadeTween) fadeTween.kill();
     };
-  }, [bgColor, thumbRatio, fadeDelay, location.pathname, isHover]);
+  }, [bgColor, thumbRatio, fadeDelay, location.pathname, isHover, thumbRef]);
 }

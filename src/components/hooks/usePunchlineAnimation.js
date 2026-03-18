@@ -20,5 +20,5 @@ export function usePunchlineAnimation(Punchline = ".animate_punchline") {
         stagger: 0.15,
       },
     );
-  }, []);
+  }, [Punchline]);
 }

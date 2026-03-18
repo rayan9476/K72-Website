@@ -44,5 +44,5 @@ export function useStackedCardsScrollAnimation2(
     return () => {
       ctx.revert();
     };
-  }, [wrapper, card, pin, isHover]);
+  }, [wrapper, card, pin, isHover, end, yPercent]);
 }

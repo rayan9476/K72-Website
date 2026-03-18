@@ -508,8 +508,6 @@ export const projectInfo = [
       "https://res.cloudinary.com/dd0fyuait/video/upload/v1773610212/ezgif-1a02dd19e3b3810f_fl1ils.mp4",
   },
 
-  // //
-
   {
     id: "oka",
     year: "2022",
@@ -671,8 +669,6 @@ export const projectInfo = [
     footerImagePlaceholder:
       "https://ik.imagekit.io/rayan8422/Oka_project_Cabane_de_la_Trappe_d_Oka%20(1).webp?tr=f-auto,w-20,q-10,bl-6",
   },
-
-  // //
 
   {
     id: "opto-reseau",
@@ -927,8 +923,6 @@ export const projectInfo = [
       "https://ik.imagekit.io/rayan8422/Opto-Reseau_OPTO_footer%20(1).webp?tr=f-auto,w-20,q-10,bl-6",
   },
 
-  // //
-
   {
     id: "coup-fumant",
     year: "2021",
@@ -1124,8 +1118,6 @@ export const projectInfo = [
       "https://ik.imagekit.io/rayan8422/Coup-Fumant_Project_K72_20211104_CS_Merch_mockup1.webp?tr=f-auto,w-20,q-10,bl-6",
   },
 
-  // //
-
   {
     id: "best",
     year: "2021",
@@ -1287,8 +1279,6 @@ export const projectInfo = [
       "https://ik.imagekit.io/rayan8422/Best_Project_BEST_footer%20(1).webp?tr=f-auto,w-20,q-10,bl-6",
   },
 
-  // //
-
   {
     id: "a-table-avec-lhistoire",
     year: "2021",
@@ -1447,8 +1437,6 @@ export const projectInfo = [
     footerImagePlaceholder:
       "https://ik.imagekit.io/rayan8422/A-Table-Avec-Ihistoire_footerimage_a%CC%80table%20(1).webp?tr=f-auto,w-20,q-10,bl-6",
   },
-
-  // //
 
   {
     id: "lamajeure",
@@ -1645,8 +1633,6 @@ export const projectInfo = [
       "https://res.cloudinary.com/dd0fyuait/video/upload/v1773683662/ezgif-8c7f279d7712d13d_gngoqf.mp4",
   },
 
-  // //
-
   {
     id: "synesthesia",
     year: "2019",
@@ -1823,8 +1809,6 @@ export const projectInfo = [
       "https://ik.imagekit.io/rayan8422/Synesthesia_Project_OSM_footer%20(1).webp?tr=f-auto,w-20,q-10,bl-6",
   },
 
-  // //
-
   {
     id: "100-temps",
     year: "2020",
@@ -1999,8 +1983,6 @@ export const projectInfo = [
     footerImagePlaceholder:
       "https://ik.imagekit.io/rayan8422/100-Temps_Project_100temps_Footer%20(1).webp?tr=f-auto,w-20,q-10,bl-6",
   },
-
-  // //
 
   {
     id: "crisis24",
@@ -2205,8 +2187,6 @@ export const projectInfo = [
     footerImagePlaceholder:
       "https://ik.imagekit.io/rayan8422/Crisis24_Project_crisis24_site_footer%20(1).webp?tr=f-auto,w-20,q-10,bl-6",
   },
-
-  // //
 
   {
     id: "we-see-you-like-no-other",
@@ -2442,8 +2422,6 @@ export const projectInfo = [
     footerImagePlaceholder:
       "https://ik.imagekit.io/rayan8422/We_See_Project_thumbnailimage_opto%20(1).webp?tr=f-auto,w-20,q-10,bl-6",
   },
-
-  // //
 
   {
     id: "open",
@@ -2700,8 +2678,6 @@ export const projectInfo = [
       "https://res.cloudinary.com/dd0fyuait/video/upload/v1773685391/ezgif-2c276bb9c4049b5d_yeimr5.mp4",
   },
 
-  // //
-
   {
     id: "fruite",
     year: "2019",
@@ -2861,8 +2837,6 @@ export const projectInfo = [
     footerImage:
       "https://res.cloudinary.com/dd0fyuait/video/upload/v1773686165/ezgif-63a3afefa3e54c51_nwefni.mp4",
   },
-
-  // //
 
   {
     id: "la-coop-federee-becomes-sollio-groupe-cooperatif",
@@ -3039,8 +3013,6 @@ export const projectInfo = [
     footerImagePlaceholder:
       "https://ik.imagekit.io/rayan8422/Coop_Project_footerimage_sollioAg%20(1).webp?tr=f-auto,w-20,q-10,bl-6",
   },
-
-  // //
 
   {
     id: "shelton",
