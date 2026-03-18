@@ -4,7 +4,7 @@ import Navbar from "../components/common/Navbar2";
 import { useContext, useRef, useLayoutEffect } from "react";
 import BlogInfoArticle from "../components/BlogInfoArticle";
 import BlogInfopageContent from "../components/BlogInfopageContent";
-import { FilterContext } from "../context/FiterContext";
+import { FilterContext } from "../context/FilterContext";
 import useScrollToTop from "../components/hooks/useScrollToTop";
 import { useFakeScrollbar } from "../components/hooks/useFakeScrollbar";
 import "../styles/Blogpage.css";
