@@ -7,7 +7,6 @@ const useBlogInfo = () => {
   const { blogId } = useParams();
 
   const [BlogInfo, setBlogInfo] = useState(null);
-  if (!blogId) return console.log("No blog title found");
 
   const normalize = (str) =>
     str
@@ -27,7 +26,8 @@ const useBlogInfo = () => {
     setBlogInfo(blogInfo);
   }, [blogId]);
 
+  if (!blogId) return null;
+
   return BlogInfo;
 };
-
 export default useBlogInfo;
