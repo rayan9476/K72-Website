@@ -7,7 +7,6 @@ on:
       - "feature/**"
   pull_request:
     branches:
-      - master
       - "feature/**"
 
 jobs:
@@ -35,7 +34,7 @@ jobs:
       - name: Run tests
         run: npm test -- --watchAll=false --passWithNoTests
 
-  # ─── Job 2: Build (master only) ──────────────────────────────────
+  # ─── Job 2: Build (master only)  ───────────────────
   build:
     name: Build
     runs-on: ubuntu-latest
