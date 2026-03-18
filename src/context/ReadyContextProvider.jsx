@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ReadyContext } from "./ReadyContext";
+import { ReadyContext } from "./ReadyContext.js";
 
 function ReadyContextProvider({ children }) {
   const [ready, setReady] = useState(false);

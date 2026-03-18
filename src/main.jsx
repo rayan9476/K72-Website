@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./styles/index.css";
+import "src/styles/index.css";
 import Stairsanimation from "./components/common/Stairsanimation.jsx";
 import { BrowserRouter } from "react-router-dom";
 import Root from "./Root.jsx";
