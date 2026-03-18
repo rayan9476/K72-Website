@@ -100,7 +100,7 @@
     padding-bottom: 100%;
   }
 }
-/*  */
+
 /* projectinfotwocards */
 @media (max-width: 699px) {
   .caption-gallery_slide {
@@ -127,7 +127,6 @@
   fill: currentColor;
 }
 
-/*  */
 /* projectinfo-centercards atyling  */
 @media (max-width: 699px) {
   .fancy-gallery_inner {
@@ -140,8 +139,6 @@
     width: 80%;
   }
 }
-
-/*  */
 
 /* project info center cards section 2 */
 

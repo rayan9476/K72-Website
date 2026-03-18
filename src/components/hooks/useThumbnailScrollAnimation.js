@@ -8,8 +8,6 @@ export default function useThumbnailScrollAnimation(thumbnailRef, data) {
   useLayoutEffect(() => {
     if (!data) return;
 
-    // const isTouch = "ontouchstart" in window || navigator.maxTouchPoints > 0;
-
     if (!thumbnailRef.current) return;
 
     gsap.fromTo(

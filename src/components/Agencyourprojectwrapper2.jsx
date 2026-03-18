@@ -17,7 +17,6 @@ function Agencyourprojectwrapper2({ images }) {
         <article>
           <div className="our_project_wrapper_2 relative h-screen block ">
             <div
-              // className={`our_project_sticky_area  ${isTouch ? "hidden" : "block"} absolute top-0 left-0 right-0 h-[200vh]`}
               className={`our_project_sticky_area pointer-events-none hidden absolute top-0 left-0 right-0 h-[200vh]`}
               id="our_project_sticky_area_2"
             ></div>

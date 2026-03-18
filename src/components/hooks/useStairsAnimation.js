@@ -57,7 +57,6 @@ const useStairsAnimation = () => {
   // run only on route change animation start here
 
   useLayoutEffect(() => {
-    // if (currentPath.pathname === "/en/contact") return;
     if (!stairsContainerRef.current || isFirstRender.current) return;
 
     const stairs = stairsContainerRef.current.querySelectorAll(".stairs");
@@ -66,7 +65,6 @@ const useStairsAnimation = () => {
     const ctx = gsap.context(() => {
       gsap.set(stairs, { y: "0%", overwrite: "auto" });
 
-      // const tl = gsap.timeline({ delay: 1.2 });
       const tl = gsap.timeline({ delay: 0.7 });
 
       tl.set(stairsContainerRef.current, {

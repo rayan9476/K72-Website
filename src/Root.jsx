@@ -1,4 +1,4 @@
-import { useEffect, useRef, useLayoutEffect, useState } from "react";
+import { useEffect, useRef, useLayoutEffect } from "react";
 import { useLocation } from "react-router-dom";
 import App from "./App";
 import Loader from "./components/common/Loader";
@@ -10,6 +10,7 @@ export default function Root() {
   const location = useLocation();
   const { ready, setReady } = useContext(ReadyContext);
 
+  // for loader on route change logic start here
   useLayoutEffect(() => {
     if (
       location.pathname === "/en/contact" ||
@@ -35,6 +36,9 @@ export default function Root() {
       if (timeout) clearTimeout(timeout);
     };
   }, [location.pathname]);
+  // for loader on route change logic start here
+
+  // for loader on initailly load logic start here
 
   useEffect(() => {
     const htmlLoader = document.getElementById("initial-loader");
@@ -62,8 +66,11 @@ export default function Root() {
       return () => window.removeEventListener("load", complete);
     }
   }, []);
+  // for loader on initailly load logic ends here
+
   const isFirst = useRef(true);
 
+  // first render not works logic start here
   useEffect(() => {
     if (isFirst.current) {
       isFirst.current = false;
@@ -71,11 +78,10 @@ export default function Root() {
     }
     setReady(false); // trigger loader only on route change
   }, [location.pathname]);
+  // first render not works logic ends here
 
   return (
     <>
-      {/* {!ready && <Loader onComplete={() => setReady(true)} />} */}
-
       {!ready && !isFirst.current && (
         <Loader onComplete={() => setReady(true)} />
       )}

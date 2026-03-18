@@ -1,10 +1,10 @@
-import { useEffect, useLayoutEffect } from "react";
+import { useLayoutEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useIsHoverDevice } from "./useIsHoverDevice";
 
 gsap.registerPlugin(ScrollTrigger);
-gsap.defaults({ overwrite: "auto" }); 
+gsap.defaults({ overwrite: "auto" });
 export default function useWorkCardsScrollAnimation({ images }) {
   // 1024px start 1599px  end
 
@@ -45,17 +45,13 @@ export default function useWorkCardsScrollAnimation({ images }) {
           start: () => (window.innerWidth < 1279 ? "top 65%" : "top 70%"),
           end: () =>
             isDestop ? `+=${cards.length * 340}` : `+=${cards.length * 469}`,
-          // scrub: true,
+
           scrub: 0.2,
         },
       });
 
       cards.forEach((card) => {
-        tl.fromTo(
-          card,
-          { height: 100 },
-          { height: cardHeight, ease: "none" },
-        );
+        tl.fromTo(card, { height: 100 }, { height: cardHeight, ease: "none" });
       });
     };
 
@@ -103,17 +99,13 @@ export default function useWorkCardsScrollAnimation({ images }) {
           start: () => (window.innerWidth < 1279 ? "top 50%" : "top 70%"),
           end: () =>
             isDestop ? `+=${cards.length * 583}` : `+=${cards.length * 946}`,
-          // scrub: true,
+
           scrub: 0.2,
         },
       });
 
       cards.forEach((card) => {
-        tl.fromTo(
-          card,
-          { height: 189 },
-          { height: cardHeight, ease: "none" },
-        );
+        tl.fromTo(card, { height: 189 }, { height: cardHeight, ease: "none" });
       });
     };
 

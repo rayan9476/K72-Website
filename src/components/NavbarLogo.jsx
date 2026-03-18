@@ -2,8 +2,7 @@ import useNavbarLogoAnimation from "./hooks/useNavbarLogoAnimation";
 import { useRef } from "react";
 import { useLogoFillAnimation } from "./hooks/useLogoFillAnimation";
 import { Link } from "react-router-dom";
-import { ReadyContext } from "../context/ReadyContext";
-import { useContext } from "react";
+
 export default function NavbarLogo({
   hoveredIndex,
   cardcontainerHover,
@@ -19,7 +18,6 @@ export default function NavbarLogo({
     white,
   });
   // logo fill animation ends here
-  const { setReady } = useContext(ReadyContext);
   // animation for navbar left logo for cardinfo component start here
   useNavbarLogoAnimation({ hoveredIndex, cardcontainerHover, siteLogoRef });
   // animation for navbar left logo for cardinfo component end here
@@ -28,9 +26,6 @@ export default function NavbarLogo({
     <div className="navbar-left  cursor-pointer   ">
       <Link to={"/"}>
         <svg
-          onClick={() => {
-            // setReady(false);
-          }}
           ref={siteLogoRef}
           id="site_logo_svg"
           className={` text-[14px] cursor-pointer md:text-[15px] xl:text-[16px] h-[44.5px]  xl:h-12 2xl:h-[60px] h-68-2000 font-[lausanne2] font-medium transition-[fill] duration-900 ease-in-out `}

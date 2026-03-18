@@ -56,7 +56,6 @@ function Agencyherosection() {
           className="text_container h-full relative z-10  flex flex-col gap-[6.4rem] items-center justify-center xl:pt-[0.3rem] "
         >
           <div className="text_header  overflow-hidden">
-            {/*  */}
             <div className="animate_hero_section_text transfrom opacity-0  translate-y-[-200px] ">
               <h1 className=" text-[18vw] z-10 md:text-[20vw]  leading-[16vw] md:leading-[17vw] lg:leading-[17.5vw] text-center text-black font-[Lausanne2] font-medium ">
                 {" "}

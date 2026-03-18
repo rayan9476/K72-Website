@@ -67,7 +67,6 @@ export default function useVideoModalAnimation({
           {
             opacity: 1,
           },
-          // "<",
         )
         .to(
           modalRef.current.querySelector(".c-video-modal_close"),

@@ -66,23 +66,6 @@ html {
   --breakpoint-3xl: 160rem;
 }
 
-/* .c-circle svg ellipse {
-  fill: none;
-  stroke-width: 5;
-  stroke: #d3fd50;
-  stroke-dasharray: 1108.44 77.95;
-  animation: dashMotion 1.5s linear infinite;
-}
-
-@keyframes dashMotion {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  100% {
-    stroke-dashoffset: -1762.77;
-  }
-} */
-
 .c-circle svg ellipse {
   fill: none;
   stroke-width: 5;
@@ -231,13 +214,6 @@ html {
     width: 3.125rem;
   }
 }
-
-/* #initial-loader {
-  position: fixed;
-  inset: 0;
-  background-color: black; 
-  z-index: 9999;
-} */
 
 /* privacy policy  page styling  */
 

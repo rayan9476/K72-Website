@@ -1,9 +1,7 @@
-// import Navbarmenu from "./Navbarmenu";
 import { lazy, useState, Suspense } from "react";
 const Navbarmenu = lazy(() => import("./Navbarmenu"));
 import NavbarLogo from "../NavbarLogo";
 import NavbarLinks from "../NavbarLinks";
-// import NavbarCloseIcon from "../NavbarCloseIcon";
 const NavbarCloseIcon = lazy(() => import("../NavbarCloseIcon"));
 import useNavbarAnimation from "../hooks/useNavbarAnimation";
 

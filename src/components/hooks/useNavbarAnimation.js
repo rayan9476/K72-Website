@@ -114,76 +114,6 @@ const useNavbarAnimation = (hoveredIndex) => {
       overwrite: "auto",
     });
 
-    // setTimeout(() => {
-    //   gsap.to("#nav_right_animate_1", {
-    //     height: targetHeight,
-    //     duration: 2.8,
-    //     overwrite: "auto",
-    //     ease: "power2.out",
-    //   });
-
-    //   gsap.to("#nav_right_animate_agency", {
-    //     y: "0%",
-    //     duration: 2.8,
-    //     overwrite: "auto",
-    //     ease: "power2.out",
-    //   });
-    //   gsap.to("#nav_right_animate_work", {
-    //     y: "0%",
-    //     duration: 2.8,
-    //     overwrite: "auto",
-    //     ease: "power2.out",
-    //   });
-    //   gsap.to(".navbar_menu_text_1", {
-    //     opacity: 1.2,
-    //     duration: 2.8,
-    //     overwrite: "auto",
-    //     ease: "power2.out",
-    //   });
-    //   gsap.to(".animate_work_text, .animate_agency_text", {
-    //     opacity: 1.2,
-    //     duration: 2.8,
-    //     overwrite: "auto",
-    //     ease: "power2.out",
-    //   });
-    //   // }, 30);
-    // }, 210);
-
-    // setTimeout(() => {
-    //   gsap.to("#nav_right_animate_1", {
-    //     height: targetHeight,
-    //     duration: 2.8,
-    //     overwrite: "auto",
-    //     ease: "power2.out",
-    //   });
-
-    //   gsap.to("#nav_right_animate_agency", {
-    //     y: "0%",
-    //     duration: 2.8,
-    //     overwrite: "auto",
-    //     ease: "power2.out",
-    //   });
-    //   gsap.to("#nav_right_animate_work", {
-    //     y: "0%",
-    //     duration: 2.8,
-    //     overwrite: "auto",
-    //     ease: "power2.out",
-    //   });
-    //   gsap.to(".navbar_menu_text_1", {
-    //     opacity: 1.2,
-    //     duration: 2.8,
-    //     overwrite: "auto",
-    //     ease: "power2.out",
-    //   });
-    //   gsap.to(".animate_work_text, .animate_agency_text", {
-    //     opacity: 1.2,
-    //     duration: 2.8,
-    //     overwrite: "auto",
-    //     ease: "power2.out",
-    //   });
-    //   // }, 30);
-    // }, 210);
-
     const tl = gsap.timeline({
       delay: 0.9,
       onComplete: () => setisComplete(true),
@@ -294,9 +224,7 @@ const useNavbarAnimation = (hoveredIndex) => {
       tlRef3.current.kill();
     }
 
-    const tl = gsap.timeline({
-      // defaults: { immediateRender: false, invalidateOnRefresh: true },
-    });
+    const tl = gsap.timeline({});
     tlRef3.current = tl;
 
     tlRef3.current.clear();
@@ -311,37 +239,6 @@ const useNavbarAnimation = (hoveredIndex) => {
       ]);
 
       const target2 = getBreakpointHeight2();
-
-      // gsap.to("#nav_right_animate_1", {
-      //   height: target2,
-      //   duration: 0.3,
-      //   ease: "power2.inOut",
-      //   overwrite: "auto",
-      // });
-      // gsap.to(".navbar_menu_text_1", {
-      //   opacity: 0,
-      //   duration: 0.3,
-      //   ease: "power2.inOut",
-      //   overwrite: "auto",
-      // });
-      // gsap.to("#nav_right_animate_agency", {
-      //   y: "-100%",
-      //   duration: 0.3,
-      //   ease: "power2.inOut",
-      //   overwrite: "auto",
-      // });
-      // gsap.to("#nav_right_animate_work", {
-      //   y: "-100%",
-      //   duration: 0.3,
-      //   ease: "power2.inOut",
-      //   overwrite: "auto",
-      // });
-      // gsap.to(".animate_work_text, .animate_agency_text", {
-      //   opacity: 0,
-      //   duration: 0.3,
-      //   ease: "power2.inOut",
-      //   overwrite: "auto",
-      // });
 
       tlRef3.current
         .to(
@@ -418,58 +315,6 @@ const useNavbarAnimation = (hoveredIndex) => {
           overwrite: "auto",
         });
       }
-
-      // gsap.to(
-      //   "#nav_right_animate_1",
-      //   {
-      //     height: target,
-      //     duration: 0.6,
-      //     overwrite: "auto",
-      //     ease: "power2.inOut",
-      //   },
-      //   "<",
-      // );
-      // gsap.to(
-      //   ".navbar_menu_text_1",
-      //   {
-      //     opacity: 1,
-      //     duration: 0.6,
-      //     overwrite: "auto",
-      //     ease: "power2.inOut",
-      //   },
-      //   "<",
-      // );
-      // gsap.to(
-      //   "#nav_right_animate_agency",
-      //   {
-      //     y: "0%",
-      //     duration: 0.6,
-      //     overwrite: "auto",
-      //     ease: "power2.inOut",
-      //   },
-      //   "<",
-      // );
-      // gsap.to(
-      //   "#nav_right_animate_work",
-      //   {
-      //     y: "0%",
-      //     duration: 0.6,
-      //     overwrite: "auto",
-      //     ease: "power2.inOut",
-      //   },
-      //   "<",
-      // );
-      // gsap.to(
-      //   ".animate_work_text, .animate_agency_text",
-      //   {
-      //     opacity: 1,
-      //     duration: 0.6,
-
-      //     overwrite: "auto",
-      //     ease: "power2.inOut",
-      //   },
-      //   "<",
-      // );
 
       tlRef3.current
         .to(
@@ -584,61 +429,6 @@ const useNavbarAnimation = (hoveredIndex) => {
 
         const target2 = getBreakpointHeight2();
 
-        // tl.to(
-        //   "#nav_right_animate_1",
-        //   {
-        //     height: target2,
-        //     duration: 0.3,
-        //     ease: "power2.inOut",
-        //     overwrite: "auto",
-        //   },
-        //   "<",
-        // )
-        //   .to(
-        //     ".navbar_menu_text_1",
-        //     {
-        //       opacity: 0,
-        //       duration: 0.3,
-        //       overwrite: "auto",
-        //       ease: "power2.inOut",
-        //     },
-        //     "<",
-        //   )
-        //   // nav 2 3
-        //   .to(
-        //     "#nav_right_animate_agency",
-        //     {
-        //       // y: "-100%",
-        //       y: "-110%",
-        //       duration: 0.3,
-        //       overwrite: "auto",
-        //       ease: "power2.inOut",
-        //     },
-        //     "<",
-        //   )
-        //   .to(
-        //     "#nav_right_animate_work",
-        //     {
-        //       y: "-100%",
-        //       y: "-110%",
-
-        //       duration: 0.3,
-        //       overwrite: "auto",
-        //       ease: "power2.inOut",
-        //     },
-        //     "<",
-        //   )
-        //   .to(
-        //     ".animate_work_text, .animate_agency_text",
-        //     {
-        //       opacity: 0,
-        //       duration: 0.3,
-        //       overwrite: "auto",
-        //       ease: "power2.inOut",
-        //     },
-        //     "<",
-        //   );
-
         tlRef2.current
           .to(
             "#nav_right_animate_1",
@@ -655,7 +445,6 @@ const useNavbarAnimation = (hoveredIndex) => {
           .to(
             "#nav_right_animate_agency",
             {
-              // y: "-100%",
               y: "-110%",
               duration: 0.5,
               overwrite: "auto",
@@ -666,7 +455,6 @@ const useNavbarAnimation = (hoveredIndex) => {
           .to(
             "#nav_right_animate_work",
             {
-              y: "-100%",
               y: "-110%",
 
               duration: 0.4,
@@ -707,64 +495,6 @@ const useNavbarAnimation = (hoveredIndex) => {
         ]);
 
         const target = getBreakpointHeight();
-
-        // for nav_right_animate_1
-        // tl.to(
-        //   "#nav_right_animate_1",
-        //   {
-        //     height: target,
-        //     duration: 1,
-        //     transformOrigin: "top",
-        //     ease: "power3.inOut",
-        //     overwrite: "auto",
-        //   },
-        //   "<",
-        // )
-        //   .to(
-        //     ".navbar_menu_text_1",
-        //     {
-        //       opacity: 1,
-        //       duration: 1,
-        //       transformOrigin: "top",
-        //       overwrite: "auto",
-        //       ease: "power3.inOut",
-        //     },
-        //     "<",
-        //   )
-        //   // nav 2 3
-        //   .to(
-        //     " #nav_right_animate_agency",
-        //     {
-        //       y: "0%",
-        //       duration: 1,
-        //       transformOrigin: "top",
-        //       overwrite: "auto",
-        //       ease: "power3.inOut",
-        //     },
-        //     "<",
-        //   )
-
-        //   .to(
-        //     "#nav_right_animate_work",
-        //     {
-        //       y: "0%",
-        //       duration: 1,
-        //       transformOrigin: "top",
-        //       overwrite: "auto",
-        //       ease: "power3.inOut",
-        //     },
-        //     "<",
-        //   )
-        //   .to(
-        //     ".animate_work_text, .animate_agency_text",
-        //     {
-        //       opacity: 1,
-        //       duration: 1,
-        //       overwrite: "auto",
-        //       ease: "power2.inOut",
-        //     },
-        //     "<",
-        //   );
 
         tlRef2.current
           .to(

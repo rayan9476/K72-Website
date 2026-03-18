@@ -14,7 +14,7 @@ function ProjectInfoCenterCardSection({ cardsImages }) {
   const card = cardsImages?.[0];
   const yPercent = card?.yPercent;
   // stacked cards animation start here
-  // useStackedCardsScroll(sectionRef, ".card", imageContainerRef, 70, -30);
+
   useStackedCardsScroll(sectionRef, ".card", imageContainerRef, 70, yPercent);
   // stacked cards animation ends here
 
@@ -91,7 +91,7 @@ function ProjectInfoCenterCardSection({ cardsImages }) {
               />
             </figure>
           </div>
-          {/* lg:pb-[9.375rem] xl:pb-40 */}
+
           <div className="c-fancy-gallery_container  -mt-[4.375rem] md:-mt-[8.75rem] lg:-mt-[9.375rem] xl:-mt-40 pt-[6.5625rem] md:pt-[17.5rem] lg:pt-[18.75rem] xl:pt-80 pb-[2.1875rem] md:pb-[8.75rem] lg:pb-0 xl:pb-0">
             <div
               ref={imageContainerRef}

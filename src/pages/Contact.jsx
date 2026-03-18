@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 function Contact() {
   //  email line animation start here
   const bannerRef = useRef(null);
-  // useBannerScrollRotate(bannerRef);
+
   //  email line animation ends here
 
   useScrollToTop();

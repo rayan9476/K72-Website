@@ -58,7 +58,6 @@ function ProjectFooterSection({ data }) {
     <>
       <div
         ref={footerRef}
-        // className="footer_section footer_wow   py-[4.375rem]  md:py-[13.125rem] xl:py-[16.25rem]"
         className="footer_section footer_wow  pt-8 lg:pt-12 pb-[4.375rem]  md:pb-[13.125rem] xl:pb-[16.25rem]"
       >
         <div className="c-project_footer ">

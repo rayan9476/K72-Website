@@ -3,7 +3,7 @@ import { useHoverCursorFlip } from "../hooks/useHoverCursorFlip";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { A11y } from "swiper/modules";
+import { A11y, Autoplay } from "swiper/modules";
 import useSwiper from "../hooks/useSwiper";
 
 function ProjectInfoOneCardSection({ slides }) {
@@ -29,7 +29,7 @@ function ProjectInfoOneCardSection({ slides }) {
               className="swiper-wrapper relative h-full w-full z-10 flex "
             >
               <Swiper
-                modules={[A11y]}
+                modules={[A11y, Autoplay]}
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
                 slidesPerView={1}
                 slidesPerGroup={1}
@@ -39,6 +39,10 @@ function ProjectInfoOneCardSection({ slides }) {
                 spaceBetween={0}
                 speed={900}
                 allowTouchMove={true}
+                autoplay={{
+                  delay: 3000,
+                  disableOnInteraction: false,
+                }}
                 className="caption-gallery "
               >
                 {slides.map((item, index) => (

@@ -48,13 +48,11 @@ function ProjectInfoCardSection({
           onMouseEnter={() => setisHover(true)}
           onMouseLeave={() => setisHover(false)}
         >
-          {/* relative  flex items-center justify-center */}
           <figure
             ref={figureRef}
             className="video_featured_visual absolute  [transform:translate3d(-50%,-50%,0px)] md:[transform:translate3d(50%,-50%,0px)] will-change-[transform,border-radius] animate_figure   w-[56.25vw] h-[56.25vw]  inset-1/2  
             "
           >
-            {/* mt-4 mb-12 md:mt-8 md:mb-16  xl:mb-0 xl:mt-0*/}
             <picture>
               <source
                 srcSet={smallimg}

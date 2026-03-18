@@ -113,7 +113,6 @@ const useAgencyHeroSectionAnimation = () => {
     // Animate immediately (NO delayedCall)
     gsap.to(".animate_hero_section_text", {
       y: 0,
-      // opacity: 1,
       autoAlpha: 1,
       duration: 1.8,
     });

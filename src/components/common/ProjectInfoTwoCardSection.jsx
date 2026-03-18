@@ -3,7 +3,7 @@ import { useHoverCursorFlip } from "../hooks/useHoverCursorFlip";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { A11y } from "swiper/modules";
+import { A11y, Autoplay } from "swiper/modules";
 import useSwiper from "../hooks/useSwiper";
 function ProjectInfoTwoCardSection({ slides }) {
   const containerRef = useRef(null);
@@ -21,7 +21,6 @@ function ProjectInfoTwoCardSection({ slides }) {
   return (
     <>
       <div className=" pt-[8.75px] xl:pt-2.5  pr-[8.75px]  3xl:pt-[12.5px] bg-white cursor-pointer">
-        {/* mb-[4.375rem] */}
         <div className="relative mb-[0.675rem]   md:[direction:ltr]">
           <div className="caption-gallery " data-module-caption-gallery="m9">
             <div
@@ -29,7 +28,7 @@ function ProjectInfoTwoCardSection({ slides }) {
               className="swiper-wrapper relative h-full w-full z-10 flex "
             >
               <Swiper
-                modules={[A11y]}
+                modules={[A11y, Autoplay]}
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
                 slidesPerView={2}
                 slidesPerGroup={2}
@@ -39,6 +38,10 @@ function ProjectInfoTwoCardSection({ slides }) {
                 spaceBetween={0}
                 speed={900}
                 allowTouchMove={true}
+                autoplay={{
+                  delay: 3000,
+                  disableOnInteraction: false,
+                }}
                 className="caption-gallery "
               >
                 {slides.map((item, index) => {

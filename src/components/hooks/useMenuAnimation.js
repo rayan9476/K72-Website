@@ -82,9 +82,6 @@ const useMenuAnimation = (ismenuOpen, setIsAnimating) => {
   useEffect(() => {
     const items = gsap.utils.toArray(".animate_menu_item_1");
 
-    //
-    //  const items = gsap.utils.toArray(".animate_menu_item_1");
-
     items.forEach((item) => {
       gsap.set(item.querySelectorAll(".nav_menu_hover_text_container_1"), {
         autoAlpha: 0,

@@ -50,8 +50,6 @@ body {
   }
 }
 
-/* pt-[50vw]  xl:pt-[55vh] */
-
 @media (max-aspect-ratio: 1/1) {
   .main_content_1 {
     padding-top: 50vw;
@@ -67,15 +65,9 @@ body {
 @media (min-width: 1024px) and (min-aspect-ratio: 1/1) {
   .image_container {
     top: -15.2vw;
-    /* top: -18vh; */
   }
-
-  /* .main_content_1 {
-    padding-top: 55vh;
-  } */
 }
 
-/*  */
 @media (min-width: 1150px) and (max-width: 1279px) {
   .about_detalis_links {
     gap: 14.2vw;
@@ -257,15 +249,6 @@ body {
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-/* Agecnyteammemberslist styling */
-/* 
-@media (min-width: 1024px) and (max-aspect-ratio: 1/1) {
-  .A_team_members_images {
-    top: -30vh;
-    bottom: -30vh;
-  }
-} */
-
 /* Agency team members styling */
 
 @media (min-aspect-ratio: 1/1) {
@@ -312,5 +295,3 @@ body {
     top: 48%;
   }
 }
-
-/* work page */

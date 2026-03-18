@@ -14,7 +14,6 @@ export default function useCenterCardAnimation(sectionRef, ImageRef) {
 
     const ctx = gsap.context(() => {
       gsap.to(ImageRef.current, {
-        // y: 140,
         y: 300,
 
         duration: 1.2,

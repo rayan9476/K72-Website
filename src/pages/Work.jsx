@@ -77,16 +77,13 @@ function Work() {
             </div>
 
             <div
-              // className={`lol mb-4  relative  ${!isTouch ? "" : "lg:h-[2854px]"}   xl:h-[3860px]`}
               className={`lol mb-4  relative    `}
-              // className={`lol mb-4  relative     h-[3860px]`}
               onMouseEnter={() => setcardcontainerHover(true)}
               onMouseLeave={() => setcardcontainerHover(false)}
             >
               {images.map((img, i) => (
                 <div
                   key={i}
-                  // className={`card_container contain-layout-paint  ${!isTouch ? "h-full" : "transform-gpu lg:h-[359px]"} lg:h-[359px]  relative    xl:h-[469px]  2xl:h-[583px] 3xl:h-[946px]   flex flex-col md:flex-row items-center md:items-start justify-center gap-4 md:gap-2 lg:gap-2.5 3xl:gap-3 mb-4 w-full md:mt-2   origin-top`}
                   className={`card_container contain-layout-paint h-full lg:h-[359px]  relative    xl:h-[469px]  2xl:h-[583px] 3xl:h-[946px]   flex flex-col md:flex-row items-center md:items-start justify-center gap-4 md:gap-2 lg:gap-2.5 3xl:gap-3 mb-4 w-full md:mt-2   origin-top`}
                 >
                   {(i === 2 && (

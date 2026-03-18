@@ -1,5 +1,4 @@
 import { useRef } from "react";
-// import { useStackedCardsScroll } from "../hooks/useStackedCardsScroll";
 import { useStackedCardsScrollAnimation2 } from "../hooks/useStackedCardsScrollAnimation2";
 import { useIsHoverDevice } from "../hooks/useIsHoverDevice";
 

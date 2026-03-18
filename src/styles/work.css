@@ -26,12 +26,8 @@
   .card_info {
     display: none;
   }
-  /* jjjj */
-  @media (min-width: 1024px) {
-    /* .lol {
-      height: 2854px;
-    } */
 
+  @media (min-width: 1024px) {
     .card_container {
       height: 359px;
     }
@@ -57,7 +53,6 @@
   background-color: #d3fd50;
   z-index: -1;
   transform-origin: center;
-  /* transform: scaleY(0); */
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) and (min-aspect-ratio: 1/1) {

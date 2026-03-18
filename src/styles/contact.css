@@ -13,14 +13,6 @@ html {
   scrollbar-width: none;
 }
 
-/* body {
-  overscroll-behavior: none;
-} */
-
-/* .--container {
-  touch-action: none;
-} */
-
 .contact_banner_inner {
   animation: ContactbannerInner 5s linear infinite;
 }

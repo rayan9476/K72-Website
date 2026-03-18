@@ -41,12 +41,10 @@ export default function useRouteChangeStairsAnimation() {
           setIsRouteChanging(true);
         },
       });
-      // gsap.set(stairsContainerRef2.current, { opacity: 0 });
-      // gsap.set(stairsContainerRef2.current, { opacity: 0 });
 
       tl.to(stairs, {
         y: "0%",
-        // duration: 0.3,
+
         stagger: {
           amount: -0.2,
         },
