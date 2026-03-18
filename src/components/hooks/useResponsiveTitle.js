@@ -17,14 +17,15 @@ export function useResponsiveTitle(blogData) {
     window.addEventListener("resize", onResize);
     return () => window.removeEventListener("resize", onResize);
   }, []);
+  if (!blogData) return [];
 
   const lines = isUltraWide
     ? blogData.title5
     : isDesktop
-    ? blogData.title4
-    : isMobile
-    ? blogData.title2
-    : blogData.title3;
+      ? blogData.title4
+      : isMobile
+        ? blogData.title2
+        : blogData.title3;
 
   return lines;
 }

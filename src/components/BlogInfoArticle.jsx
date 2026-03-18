@@ -7,6 +7,7 @@ function BlogInfoArticle({ blogData }) {
   // punchline animation ends here
 
   const lines = useResponsiveTitle(blogData);
+
   if (!blogData) return null;
   return (
     <>

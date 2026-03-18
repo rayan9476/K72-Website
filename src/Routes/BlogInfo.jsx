@@ -14,7 +14,6 @@ function BlogInfo() {
   // blog info start here
   const BlogInfo = useBlogInfo();
   // blog info ends here
-
   const { activeFilter, setActiveFilter } = useContext(FilterContext);
   useScrollToTop();
 
@@ -25,7 +24,8 @@ function BlogInfo() {
 
   //  dynamic page name change  logic start here
   useLayoutEffect(() => {
-    if (!BlogInfo?.title) return;
+    if (!BlogInfo) return null;
+
     document.title = `${BlogInfo?.title} — K72 Agency`;
   }, [BlogInfo]);
   //  dynamic page name change  logic ends here
