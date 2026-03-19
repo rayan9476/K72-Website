@@ -9,6 +9,7 @@ function Home() {
   useEffect(() => {
     if (location.pathname === "/") document.title = "Accueil — Agence K72";
   }, [location]);
+
   return (
     <>
       <header>

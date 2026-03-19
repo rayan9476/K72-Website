@@ -17,7 +17,7 @@ export function useResponsiveTitle(blogData) {
     window.addEventListener("resize", onResize);
     return () => window.removeEventListener("resize", onResize);
   }, []);
-  if (!blogData) return [];
+  if (!blogData) return null;
 
   const lines = isUltraWide
     ? blogData.title5

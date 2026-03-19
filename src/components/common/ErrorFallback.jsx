@@ -4,7 +4,7 @@ import { useFakeScrollbar } from "../hooks/useFakeScrollbar";
 import { IoReloadCircleOutline } from "react-icons/io5";
 import { lazy, Suspense } from "react";
 const Footer = lazy(() => import("./Footer"));
-function ErrorFallback({ error, resetErrorBoundary }) {
+function ErrorFallback() {
   const thumbRef = useRef(null);
 
   useFakeScrollbar(thumbRef, {
@@ -22,7 +22,7 @@ function ErrorFallback({ error, resetErrorBoundary }) {
         />
       </div>
 
-      <main className=" min-h-screen relative w-full  bg-gradient-to-b from-[#a7a9d6] to-[#e5e5e5] bg-gray-200">
+      <main className="Error_Fallback_Con  min-h-screen relative w-full  bg-gradient-to-b from-[#a7a9d6] to-[#e5e5e5] bg-gray-200">
         <div className="w-full relative min-h-screen  xl:-top-40  flex items-center justify-center  ">
           <div className="relative  ">
             <h1 className="absolute inset-0 flex items-center justify-center text-[70vw] lg:text-[60vw] z-[1] -top-16 md:top-0 font-medium font-[Lausanne2] text-white/50 leading-none pointer-events-none select-none">
@@ -44,15 +44,8 @@ function ErrorFallback({ error, resetErrorBoundary }) {
                   another page!
                 </h2>
 
-                <p className="mt-3 text-gray-600 text-sm md:text-base lg:text-[1.5rem] xl:text-[2rem] 3xl:text-[3rem] font-medium font-[Lausanne2] max-w-md mx-auto ">
-                  {error.message}
-                </p>
-
                 <button
-                  onClick={() => {
-                    window.location.reload();
-                    resetErrorBoundary();
-                  }}
+                  onClick={() => window.location.reload()}
                   className="mt-6 px-6 py-3 bg-white hover:bg-[#a7a9d6] hover:text-white transition-colors duration-100 ease-in cursor-pointer rounded-full md:text-[20px] lg:text-[24px] xl:text-[38px] 3xl:text-[50px] shadow flex items-center gap-2 mx-auto  font-medium font-[Lausanne2]"
                 >
                   <IoReloadCircleOutline /> Reload page

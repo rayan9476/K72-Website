@@ -49,7 +49,7 @@ function BlogArticle({ blogData }) {
                     width={500}
                     height={500}
                     loading={index < 2 ? "eager" : "lazy"}
-                    fetchpriority={index < 2 ? "high" : "auto"}
+                    fetchPriority={index < 2 ? "high" : "auto"}
                     style={{
                       backgroundImage: `url(${item.placeholder}?tr=f-auto,w-20,q-10,bl-6)`,
                       backgroundSize: "cover",

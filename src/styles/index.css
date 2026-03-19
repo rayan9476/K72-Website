@@ -479,3 +479,9 @@ html {
     display: block;
   }
 }
+
+@media (min-width: 1024px) and (max-width: 1279px) and (min-aspect-ratio: 1/1) {
+  .Error_Fallback_Con {
+    padding-bottom: 5rem;
+  }
+}

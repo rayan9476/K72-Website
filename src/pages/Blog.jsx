@@ -52,14 +52,14 @@ function Blog() {
             </h1>
           </div>
 
-          <div class="blog_page_filters_container  px-[8.75px] lg:px-[9.375px] 2xl:px-[10.625px]  3xl:px-[12.5px]">
-            <div class="blog_list_container ">
-              <div class="blog_list_filters flex flex-col lg:flex-row lg:justify-end items-center gap-[0.2734375rem]">
+          <div className="blog_page_filters_container  px-[8.75px] lg:px-[9.375px] 2xl:px-[10.625px]  3xl:px-[12.5px]">
+            <div className="blog_list_container ">
+              <div className="blog_list_filters flex flex-col lg:flex-row lg:justify-end items-center gap-[0.2734375rem]">
                 <p className="text-[1.09375rem] lg:text-[1.171875rem] xl:text-[1.25rem] 2xl:text-[1.328125rem] -font_size 3xl:text-[1.5625rem] font-[Lausanne2] leading-[1.25] text-black font-medium">
                   Categories:
                 </p>
 
-                <div class="blog-list_filters_container   flex items-center justify-start gap-[1px]  flex-wrap">
+                <div className="blog-list_filters_container   flex items-center justify-start gap-[1px]  flex-wrap">
                   <BlogFilters filtersData={filters} />
                 </div>
               </div>

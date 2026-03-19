@@ -75,7 +75,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       ScrollTrigger.refresh();
-    }, 2500);
+    }, 3500);
 
     return () => clearTimeout(timer);
   }, [location.pathname]);

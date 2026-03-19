@@ -24,8 +24,6 @@ function BlogInfo() {
 
   //  dynamic page name change  logic start here
   useLayoutEffect(() => {
-    if (!BlogInfo) return null;
-
     document.title = `${BlogInfo?.title} — K72 Agency`;
   }, [BlogInfo]);
   //  dynamic page name change  logic ends here
