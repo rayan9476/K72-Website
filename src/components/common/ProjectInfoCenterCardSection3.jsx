@@ -2,7 +2,7 @@ function ProjectInfoCenterCardSection3({ cardsImages }) {
   return (
     <>
       <div className="c-section my-[4.375rem] md:my-[13.125rem] lg:my-[14.0625rem] xl:my-60 2xl:my-[15.9375rem] center-card-my 3xl:my-[18.75rem] ">
-        <figure className="c-block-image [width:calc(100vw-5rem)] md:w-[80%] lg:[width:calc((100vw-13.125rem)*14/20+8.125rem)] mx-auto rounded-[3.0625rem] lg:rounded-[3.28125rem] xl:rounded-[3.5rem] 2xl:rounded-[3.71875rem] --center-card-rounded 3xl:rounded-[4.375rem] overflow-hidden">
+        <figure className="c-block-image bg-[rgba(0,0,0,0.1)] [width:calc(100vw-5rem)] md:w-[80%] lg:[width:calc((100vw-13.125rem)*14/20+8.125rem)] mx-auto rounded-[3.0625rem] lg:rounded-[3.28125rem] xl:rounded-[3.5rem] 2xl:rounded-[3.71875rem] --center-card-rounded 3xl:rounded-[4.375rem] overflow-hidden">
           {cardsImages?.image && (
             <>
               <picture>

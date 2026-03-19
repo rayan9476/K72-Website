@@ -79,11 +79,11 @@ function ProjectInfoCenterCardSection({ cardsImages }) {
       >
         <div className="c-fancy-gallery md:[direction:ltr] ">
           <div className="c-fancy-gallery_head relative flex mt-48 md:mt-[28rem] lg:mt-[34rem] xl:mt-[36rem] 2xl:mt-[30rem] ">
-            <figure className="c-fancy-gallery_head_small   is-inview w-[40vw] pl-0 relative z-10 -mt-[8%] lg:-mt-[10%] xl:-mt-[14%] 2xl:-mt-[16%] 3xl:-mt-[18%] shrink-0 lg:w-[calc((100vw-13.125rem)*9/20+7.5rem)] lg:pl-[calc((100vw-13.125rem)*1/20+1.25rem)]">
+            <figure className="c-fancy-gallery_head_small   is-inview bg-[rgba(0,0,0,0.1)] w-[40vw] pl-0 relative z-10 -mt-[8%] lg:-mt-[10%] xl:-mt-[14%] 2xl:-mt-[16%] 3xl:-mt-[18%] shrink-0 lg:w-[calc((100vw-13.125rem)*9/20+7.5rem)] lg:pl-[calc((100vw-13.125rem)*1/20+1.25rem)]">
               {renderMedia(file?.images?.[0], ImageRef, "scroll-image")}
             </figure>
 
-            <figure className="c-fancy-gallery_head_large hidden  overflow-hidden grow ml-[calc((100vw-13.125rem)*-3/20+-1.875rem)] rounded-[3.5rem]">
+            <figure className="c-fancy-gallery_head_large hidden bg-[rgba(0,0,0,0.1)] overflow-hidden grow ml-[calc((100vw-13.125rem)*-3/20+-1.875rem)] rounded-[3.5rem]">
               <img
                 src={card?.images?.[0]?.src}
                 alt="cardsImage"
@@ -99,7 +99,7 @@ function ProjectInfoCenterCardSection({ cardsImages }) {
             >
               {card?.images?.[1] && (
                 <figure
-                  className={`c-fancy-gallery_intro card  ${!isHover ? "" : "absolute h-full top-0 left-0"}  card_image pb-[2.1875rem] md:pb-[6.5625rem] lg:mb-[7.03125rem] xl:mb-8`}
+                  className={`c-fancy-gallery_intro card bg-[rgba(0,0,0,0.1)] ${!isHover ? "" : "absolute h-full top-0 left-0"}  card_image pb-[2.1875rem] md:pb-[6.5625rem] lg:mb-[7.03125rem] xl:mb-8`}
                 >
                   <picture>
                     <source
@@ -121,14 +121,14 @@ function ProjectInfoCenterCardSection({ cardsImages }) {
               )}
               {card?.images?.[2] && (
                 <figure
-                  className={`c-fancy-gallery_intro card  ${!isHover ? "" : "absolute h-full top-0 left-0"}  card_image pb-[2.1875rem] md:pb-[6.5625rem] lg:mb-[7.03125rem] xl:mb-8`}
+                  className={`c-fancy-gallery_intro card bg-[rgba(0,0,0,0.1)] ${!isHover ? "" : "absolute h-full top-0 left-0"}  card_image pb-[2.1875rem] md:pb-[6.5625rem] lg:mb-[7.03125rem] xl:mb-8`}
                 >
                   {renderMedia(file?.images?.[2])}
                 </figure>
               )}
               {card?.images?.[3] && (
                 <figure
-                  className={`c-fancy-gallery_intro card  ${!isHover ? "" : "absolute h-full  top-0 left-0"}  card_image pb-[2.1875rem] md:pb-[6.5625rem] lg:mb-[7.03125rem] xl:mb-8`}
+                  className={`c-fancy-gallery_intro card bg-[rgba(0,0,0,0.1)] ${!isHover ? "" : "absolute h-full  top-0 left-0"}  card_image pb-[2.1875rem] md:pb-[6.5625rem] lg:mb-[7.03125rem] xl:mb-8`}
                 >
                   <picture>
                     <source

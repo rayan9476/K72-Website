@@ -21,13 +21,15 @@ import { useIsHoverDevice } from "./components/hooks/useIsHoverDevice";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
-  const location = useLocation();
-  const lenisRef = useRef(null);
   // is hover logic start here
   const isHover = useIsHoverDevice();
   // is hover logic ends here
 
+  // global lenis logic start here
   const rafRef = useRef(null);
+  const location = useLocation();
+  const lenisRef = useRef(null);
+
   useEffect(() => {
     if (!isHover) return;
     if (location.pathname === "/en/contact") {
@@ -71,24 +73,8 @@ function App() {
       delete window.__lenis;
     };
   }, [location.pathname, isHover]);
+  // global lenis logic ends here
 
-  useEffect(() => {
-    let raf1, raf2, timer;
-
-    raf1 = requestAnimationFrame(() => {
-      raf2 = requestAnimationFrame(() => {
-        ScrollTrigger.refresh();
-        // fallback after images settle
-        timer = setTimeout(() => ScrollTrigger.refresh(), 1500);
-      });
-    });
-
-    return () => {
-      cancelAnimationFrame(raf1);
-      cancelAnimationFrame(raf2);
-      clearTimeout(timer);
-    };
-  }, [location.pathname]);
   return (
     <ErrorBoundary
       FallbackComponent={ErrorFallback}

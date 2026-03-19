@@ -103,7 +103,7 @@ function ProjectInfoCenterCardSection2({ cardsImages }) {
                 className={`center_card_animate  ${!isHover ? "relative " : "absolute  "}   top-0 left-0 h-full w-full flex items-center justify-center`}
               >
                 <figure
-                  className={`layered-punchline_image ${!isHover ? "w-[70vw] h-[105vw] mb-[2.1875rem]" : "h-screen w-[66.6666666667vh] "} is-inview    z-10 overflow-hidden transition-[border-radius] duration-300 ease-[cubic-bezier(0.215,0.61,0.355,1)]`}
+                  className={`layered-punchline_image bg-[rgba(0,0,0,0.1)] ${!isHover ? "w-[70vw] h-[105vw] mb-[2.1875rem]" : "h-screen w-[66.6666666667vh] "} is-inview    z-10 overflow-hidden transition-[border-radius] duration-300 ease-[cubic-bezier(0.215,0.61,0.355,1)]`}
                 >
                   {renderMedia(images?.[0], "cards_image_1")}
                 </figure>
@@ -117,7 +117,7 @@ function ProjectInfoCenterCardSection2({ cardsImages }) {
                 className={`center_card_animate relative ${!isHover ? "relative " : "absolute "}  top-0 left-0 w-full flex items-center justify-center`}
               >
                 <figure
-                  className={`layered-punchline_image ${!isHover ? "w-[70vw] h-[105vw] mb-[2.1875rem]" : "h-screen w-[66.6666666667vh]"} is-inview  z-10 overflow-hidden transition-[border-radius] duration-300 ease-[cubic-bezier(0.215,0.61,0.355,1)]`}
+                  className={`layered-punchline_image bg-[rgba(0,0,0,0.1)] ${!isHover ? "w-[70vw] h-[105vw] mb-[2.1875rem]" : "h-screen w-[66.6666666667vh]"} is-inview  z-10 overflow-hidden transition-[border-radius] duration-300 ease-[cubic-bezier(0.215,0.61,0.355,1)]`}
                 >
                   {renderMedia(images?.[1])}
                 </figure>
