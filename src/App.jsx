@@ -73,11 +73,21 @@ function App() {
   }, [location.pathname, isHover]);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      ScrollTrigger.refresh();
-    }, 3500);
+    let raf1, raf2, timer;
 
-    return () => clearTimeout(timer);
+    raf1 = requestAnimationFrame(() => {
+      raf2 = requestAnimationFrame(() => {
+        ScrollTrigger.refresh();
+        // fallback after images settle
+        timer = setTimeout(() => ScrollTrigger.refresh(), 500);
+      });
+    });
+
+    return () => {
+      cancelAnimationFrame(raf1);
+      cancelAnimationFrame(raf2);
+      clearTimeout(timer);
+    };
   }, [location.pathname]);
   return (
     <ErrorBoundary

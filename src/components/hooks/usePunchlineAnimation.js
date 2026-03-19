@@ -1,8 +1,12 @@
 import { useEffect } from "react";
 import gsap from "gsap";
 gsap.defaults({ overwrite: "auto" });
-export function usePunchlineAnimation(Punchline = ".animate_punchline") {
+export function usePunchlineAnimation(
+  Punchline = ".animate_punchline",
+  ready = true,
+) {
   useEffect(() => {
+    if (!ready) return;
     const lines = document.querySelectorAll(Punchline);
 
     if (!lines.length) return;
@@ -20,5 +24,5 @@ export function usePunchlineAnimation(Punchline = ".animate_punchline") {
         stagger: 0.15,
       },
     );
-  }, [Punchline]);
+  }, [Punchline, ready]);
 }

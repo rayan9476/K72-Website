@@ -641,12 +641,6 @@ export const projectInfo = [
 
       {
         large:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773610677/ezgif-86cf3eb09a1278cf_sgugwh.mp4",
-        small:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773610677/ezgif-86cf3eb09a1278cf_sgugwh.mp4",
-      },
-      {
-        large:
           "https://ik.imagekit.io/rayan8422/Oka_project_behance_OKA_1500X1200_bunkerheader%20(1).webp?tr=f-auto,w-1200,q-60",
         small:
           "https://ik.imagekit.io/rayan8422/Oka_project_behance_OKA_1500X1200_bunkerheader%20(1).webp?tr=f-auto,w-720,h-480,q-60",

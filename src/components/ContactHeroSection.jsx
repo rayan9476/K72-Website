@@ -14,7 +14,7 @@ function ContactHeroSection() {
   //  infinte scroll or rotaate animation ends here
 
   //  punchline animation start here
-  usePunchlineAnimation();
+  usePunchlineAnimation(".animate_punchline", !!Sections);
 
   //  punchline animation ends here
 

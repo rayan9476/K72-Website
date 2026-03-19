@@ -2,11 +2,11 @@ import BlogFilters from "./BlogFilters";
 import { usePunchlineAnimation } from "./hooks/usePunchlineAnimation";
 import { useResponsiveTitle } from "./hooks/useResponsiveTitle";
 function BlogInfoArticle({ blogData }) {
-  // punchline animation start here
-  usePunchlineAnimation();
-  // punchline animation ends here
-
   const lines = useResponsiveTitle(blogData);
+
+  // punchline animation start here
+  usePunchlineAnimation(".animate_punchline", !!blogData);
+  // punchline animation ends here
 
   if (!blogData) return null;
   return (

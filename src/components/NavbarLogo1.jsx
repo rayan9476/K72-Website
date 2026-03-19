@@ -1,9 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
 function NavbarLogo1() {
   const location = useLocation();
+
   return (
     <div className="navbar-left   cursor-pointer  ">
-      <Link to={location.pathname === "/en/contact" ? "/" : location.pathname}>
+      <Link to={location.pathname === "/" ? null : "/"}>
         <svg
           id="site_logo_svg"
           className={`text-[14px]   md:text-[15px] xl:text-[16px] h-[44.5px]  xl:h-12 2xl:h-[60px] h-68-2000 font-[lausanne2] font-medium transition-[fill] duration-900 ease-in-out `}
