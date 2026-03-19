@@ -79,7 +79,7 @@ function App() {
       raf2 = requestAnimationFrame(() => {
         ScrollTrigger.refresh();
         // fallback after images settle
-        timer = setTimeout(() => ScrollTrigger.refresh(), 500);
+        timer = setTimeout(() => ScrollTrigger.refresh(), 1500);
       });
     });
 

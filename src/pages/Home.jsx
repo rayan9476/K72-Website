@@ -15,7 +15,7 @@ function Home() {
       <header>
         <Navbar />
       </header>
-      <main className="relative h-screen  w-screen bg-black">
+      <main className="relative h-screen  w-screen ">
         <Herosectionvideo type="background" syncRef={bgVideoRef} />
 
         <div className="absolute h-screen  top-0 left-0 right-0">
