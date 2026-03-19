@@ -1,10 +1,15 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 gsap.defaults({ overwrite: "auto" });
 const useNavbarMenuStairs = (ismenuOpen) => {
+  const isFirstRender = useRef(true);
+
   useEffect(() => {
-    if (!ismenuOpen) return;
     //  Skip animation on initial mount
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
 
     const tl = gsap.timeline();
     const stairs = document.querySelectorAll(".nav_stairs");
