@@ -12,12 +12,9 @@ const WorkCardinfo = React.lazy(() => import("../components/WorkCardinfo"));
 const Footer = React.lazy(() => import("../components/common/Footer"));
 import WorkCards from "../components/WorkCards";
 import { useFakeScrollbar } from "../components/hooks/useFakeScrollbar";
-import useScrollToTop from "../components/hooks/useScrollToTop";
 import { images } from "../Data/WorkCardsSectionData";
 
 function Work() {
-  useScrollToTop();
-
   //  dynamic page name change  logic start here
   useEffect(() => {
     document.title = "Work — K72 Agency";

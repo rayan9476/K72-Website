@@ -7,7 +7,6 @@ import { useBlogFilterByQuery } from "../components/hooks/useBlogFilterByQuery";
 import { useRef, useContext, useLayoutEffect } from "react";
 import { useFakeScrollbar } from "../components/hooks/useFakeScrollbar";
 import { FilterContext } from "../context/FilterContext";
-import useScrollToTop from "../components/hooks/useScrollToTop";
 import { filters } from "../Data/blogData";
 import "../styles/Blogpage.css";
 
@@ -22,7 +21,6 @@ function Blog() {
     bgColor: "#7F7F7F",
   });
 
-  useScrollToTop();
 
   //  dynamic page name change  logic start here
   useLayoutEffect(() => {

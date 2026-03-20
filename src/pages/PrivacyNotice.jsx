@@ -4,10 +4,8 @@ const Footer = lazy(() => import("../components/common/Footer"));
 import { useFakeScrollbar } from "../components/hooks/useFakeScrollbar";
 import { useRef, useLayoutEffect } from "react";
 import PrivacyNoticeContent from "../components/PrivacyNoticeContent";
-import useScrollToTop from "../components/hooks/useScrollToTop";
 
 function PrivacyNotice() {
-  useScrollToTop();
   const thumbRef = useRef(null);
 
   useFakeScrollbar(thumbRef, {

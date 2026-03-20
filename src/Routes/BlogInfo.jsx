@@ -5,7 +5,6 @@ import { useContext, useRef, useLayoutEffect } from "react";
 import BlogInfoArticle from "../components/BlogInfoArticle";
 import BlogInfopageContent from "../components/BlogInfopageContent";
 import { FilterContext } from "../context/FilterContext";
-import useScrollToTop from "../components/hooks/useScrollToTop";
 import { useFakeScrollbar } from "../components/hooks/useFakeScrollbar";
 import "../styles/Blogpage.css";
 import useBlogInfo from "../components/hooks/useBlogInfo";
@@ -15,7 +14,6 @@ function BlogInfo() {
   const BlogInfo = useBlogInfo();
   // blog info ends here
   const { activeFilter, setActiveFilter } = useContext(FilterContext);
-  useScrollToTop();
 
   const thumbRef = useRef(null);
   useFakeScrollbar(thumbRef, {

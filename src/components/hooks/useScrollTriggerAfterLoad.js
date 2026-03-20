@@ -43,12 +43,13 @@ export default function useScrollTriggerAfterLoad(data) {
       if (killed) return;
 
       // increase buffer for production
-      await new Promise((resolve) => setTimeout(resolve, 800));
+      await new Promise((resolve) => setTimeout(resolve, 2500));
 
       if (killed) return;
 
       ScrollTrigger.clearScrollMemory();
       ScrollTrigger.refresh(true);
+      
 
       //  second refresh after extra delay for safety
       await new Promise((resolve) => setTimeout(resolve, 500));

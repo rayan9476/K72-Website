@@ -17,10 +17,15 @@ import { ErrorBoundary } from "react-error-boundary";
 import ErrorFallback from "./components/common/ErrorFallback";
 import NotFound from "./components/common/NotFound";
 import { useIsHoverDevice } from "./components/hooks/useIsHoverDevice";
+import useScrollToTop from "./components/hooks/useScrollToTop";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
+  // reset tu top logic start here
+  useScrollToTop();
+  // reset tu top logic ends here
+
   // is hover logic start here
   const isHover = useIsHoverDevice();
   // is hover logic ends here

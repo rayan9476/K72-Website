@@ -43,7 +43,7 @@ function ProjectInfoCenterCardSection({ cardsImages }) {
           loop
           playsInline
           src={url}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover bg-[rgba(0,0,0,0.1)]"
         />
       );
     }
@@ -54,7 +54,7 @@ function ProjectInfoCenterCardSection({ cardsImages }) {
         <img
           ref={ref}
           src={url}
-          className={`is-inview -lazy-loaded  w-full h-full ${
+          className={`is-inview -lazy-loaded bg-[rgba(0,0,0,0.1)] w-full h-full ${
             !isHover ? "object-cover" : media?.objectFit || "object-cover"
           } ${scrollImage}`}
           style={{
@@ -79,15 +79,15 @@ function ProjectInfoCenterCardSection({ cardsImages }) {
       >
         <div className="c-fancy-gallery md:[direction:ltr] ">
           <div className="c-fancy-gallery_head relative flex mt-48 md:mt-[28rem] lg:mt-[34rem] xl:mt-[36rem] 2xl:mt-[30rem] ">
-            <figure className="c-fancy-gallery_head_small   is-inview bg-[rgba(0,0,0,0.1)] w-[40vw] pl-0 relative z-10 -mt-[8%] lg:-mt-[10%] xl:-mt-[14%] 2xl:-mt-[16%] 3xl:-mt-[18%] shrink-0 lg:w-[calc((100vw-13.125rem)*9/20+7.5rem)] lg:pl-[calc((100vw-13.125rem)*1/20+1.25rem)]">
+            <figure className="c-fancy-gallery_head_small   is-inview  w-[40vw] pl-0 relative z-10 -mt-[8%] lg:-mt-[10%] xl:-mt-[14%] 2xl:-mt-[16%] 3xl:-mt-[18%] shrink-0 lg:w-[calc((100vw-13.125rem)*9/20+7.5rem)] lg:pl-[calc((100vw-13.125rem)*1/20+1.25rem)]">
               {renderMedia(file?.images?.[0], ImageRef, "scroll-image")}
             </figure>
 
-            <figure className="c-fancy-gallery_head_large hidden bg-[rgba(0,0,0,0.1)] overflow-hidden grow ml-[calc((100vw-13.125rem)*-3/20+-1.875rem)] rounded-[3.5rem]">
+            <figure className="c-fancy-gallery_head_large hidden  overflow-hidden grow ml-[calc((100vw-13.125rem)*-3/20+-1.875rem)] rounded-[3.5rem]">
               <img
                 src={card?.images?.[0]?.src}
                 alt="cardsImage"
-                className="is-inview -lazy-loaded  w-full h-full object-cover "
+                className="is-inview -lazy-loaded bg-[rgba(0,0,0,0.1)] w-full h-full object-cover "
               />
             </figure>
           </div>
@@ -110,7 +110,7 @@ function ProjectInfoCenterCardSection({ cardsImages }) {
                     <img
                       src={card?.images?.[1]?.large}
                       alt="cardsImage"
-                      className={`is-inview -lazy-loaded  w-full h-full ${
+                      className={`is-inview -lazy-loaded bg-[rgba(0,0,0,0.1)] w-full h-full ${
                         !isHover
                           ? "object-cover"
                           : card?.images?.[1]?.objectFit || "object-cover"
@@ -139,7 +139,7 @@ function ProjectInfoCenterCardSection({ cardsImages }) {
                     <img
                       src={card?.images?.[3]?.large}
                       alt="cardsImage"
-                      className={`is-inview -lazy-loaded  w-full h-full ${
+                      className={`is-inview -lazy-loaded bg-[rgba(0,0,0,0.1)] w-full h-full ${
                         !isHover
                           ? "object-cover"
                           : card?.images?.[3]?.objectFit || "object-cover"

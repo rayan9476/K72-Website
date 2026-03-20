@@ -15,13 +15,15 @@ export default function useScrollToTop() {
       window.history.scrollRestoration = "manual";
     }
 
-    const lenis = window.__lenis;
-
     const forceScrollTop = () => {
+      const lenis = window.__lenis;
       if (lenis) {
         lenis.scrollTo(0, { immediate: true, force: true });
       } else {
         window.scrollTo(0, 0);
+        setTimeout(() => {
+          window.__lenis?.scrollTo(0, { immediate: true, force: true });
+        }, 100);
       }
     };
 
@@ -33,14 +35,16 @@ export default function useScrollToTop() {
       forceScrollTop();
     }
 
+    // refresh after scroll reset
+    requestAnimationFrame(() => {
+      ScrollTrigger.clearScrollMemory();
+      ScrollTrigger.refresh();
+    });
+
     return () => {
       if ("scrollRestoration" in window.history) {
         window.history.scrollRestoration = "auto";
       }
     };
   }, [location.pathname, navType]);
-  useLayoutEffect(() => {
-    ScrollTrigger.clearScrollMemory();
-    ScrollTrigger.refresh();
-  }, []);
 }

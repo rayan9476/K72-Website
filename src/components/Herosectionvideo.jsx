@@ -26,7 +26,7 @@ function Herosectionvideo({ type, syncRef }) {
     <div className="video-wrapper flex items-center justify-center  w-full h-full ">
       {type === "background" && (
         <div
-          className="absolute inset-0  z-10 transition-opacity duration-700 ease-in-out pointer-events-none"
+          className="absolute inset-0  z-10 transition-opacity duration-100 ease-in-out pointer-events-none"
           style={{
             opacity: videoReady ? 0 : 1,
             backgroundColor: "rgba(0,0,0,0.4)",

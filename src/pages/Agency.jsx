@@ -14,15 +14,12 @@ import useTeamSectionBodyColor from "../components/hooks/useTeamSectionBodyColor
 import useHideTeamMemberTextContentOnScroll from "../components/hooks/useHideTeamMemberTextContentOnScroll";
 import { useOurProjectCardRadiusAnimation } from "../components/hooks/useOurProjectCardRadiusAnimation";
 import { useFakeScrollbar } from "../components/hooks/useFakeScrollbar";
-import useScrollToTop from "../components/hooks/useScrollToTop";
 import { AgencyourProjectImages } from "../Data/AgencyOurProjectData";
 import { useLayoutEffect } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function Agency() {
-  useScrollToTop();
-
   //  dynamic page name change  logic start here
   useLayoutEffect(() => {
     document.title = "About — K72 Agency";

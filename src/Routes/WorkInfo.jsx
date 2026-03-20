@@ -19,7 +19,6 @@ import ProjectInfoTwoCardSection2 from "../components/common/ProjectInfoTwoCardS
 import AgencyOurProject from "../components/AgencyOurProject";
 import ProjectHeroSection from "../components/common/ProjectHeroSection";
 import ProjectFooterSection from "../components/common/ProjectFooterSection";
-import useScrollToTop from "../components/hooks/useScrollToTop";
 import useScrollTriggerAfterLoad from "../components/hooks/useScrollTriggerAfterLoad";
 import useProjectInfo from "../components/hooks/useProjectInfo";
 import { useOurProjectCardRadiusAnimation } from "../components/hooks/useOurProjectCardRadiusAnimation";
@@ -34,8 +33,6 @@ function WorkInfo() {
   useFakeScrollbar(thumbRef, {
     bgColor: "#d3fd50",
   });
-
-  useScrollToTop();
 
   // data logic start here
 
