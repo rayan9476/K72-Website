@@ -32,7 +32,7 @@ export default function Root() {
     } else if (location.pathname === `/en/work/${Id}`) {
       timeout = setTimeout(() => {
         setReady(false);
-      }, 800);
+      }, 1200);
     } else {
       setReady(false);
     }
