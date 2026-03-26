@@ -5,29 +5,38 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default function useScrollTriggerAfterLoad(data) {
   const location = useLocation();
 
-  function waitForImages(container = document) {
-    const images = container.querySelectorAll("img");
-    if (!images.length) return Promise.resolve();
-
-    return Promise.all(
-      [...images].map((img) =>
-        img.complete
-          ? Promise.resolve()
-          : new Promise((resolve) => {
-              img.onload = resolve;
-              img.onerror = resolve;
-            }),
-      ),
-    );
-  }
-
   useEffect(() => {
     if (!data) return;
 
     let killed = false;
 
+    const waitForMedia = (container = document) => {
+      const images = [...container.querySelectorAll("img")];
+      const videos = [...container.querySelectorAll("video")];
+
+      const imgPromises = images.map((img) =>
+        img.complete
+          ? Promise.resolve()
+          : new Promise((res) => {
+              img.addEventListener("load", res, { once: true });
+              img.addEventListener("error", res, { once: true });
+            }),
+      );
+
+      const videoPromises = videos.map((video) =>
+        video.readyState >= 3
+          ? Promise.resolve()
+          : new Promise((res) => {
+              video.addEventListener("loadeddata", res, { once: true });
+              video.addEventListener("error", res, { once: true });
+            }),
+      );
+
+      return Promise.all([...imgPromises, ...videoPromises]);
+    };
+
     const run = async () => {
-      await waitForImages(document);
+      await waitForMedia();
 
       if (document.fonts?.ready) {
         await document.fonts.ready;
@@ -35,25 +44,23 @@ export default function useScrollTriggerAfterLoad(data) {
 
       if (killed) return;
 
-      // wait for paint + layout settle
-      await new Promise((resolve) =>
-        requestAnimationFrame(() => requestAnimationFrame(resolve)),
+      // Wait for 2 frames (layout + paint)
+      await new Promise((res) =>
+        requestAnimationFrame(() => requestAnimationFrame(res)),
       );
 
       if (killed) return;
 
-      // increase buffer for production
-      await new Promise((resolve) => setTimeout(resolve, 300));
-
-      if (killed) return;
+      // Ensure Lenis finished
+      window.__lenis?.resize?.();
 
       ScrollTrigger.clearScrollMemory();
       ScrollTrigger.refresh(true);
 
-      //  second refresh after extra delay for safety
-      await new Promise((resolve) => setTimeout(resolve, 500));
-      if (killed) return;
-      ScrollTrigger.refresh(true);
+      // Final safety refresh AFTER Lenis + layout
+      requestAnimationFrame(() => {
+        ScrollTrigger.refresh(true);
+      });
     };
 
     run();
