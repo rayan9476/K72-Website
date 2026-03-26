@@ -24,10 +24,14 @@ export default function Root() {
 
     let timeout;
 
-    if (!isBackForward || location.pathname === "/en/work/oka") {
+    if (!isBackForward) {
       timeout = setTimeout(() => {
         setReady(false);
       }, 200);
+    } else if (location.pathname === "/en/work/oka") {
+      timeout = setTimeout(() => {
+        setReady(false);
+      }, 500);
     } else {
       setReady(false);
     }
