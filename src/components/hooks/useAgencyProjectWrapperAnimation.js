@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useIsHoverDevice } from "./useIsHoverDevice";
@@ -10,7 +10,7 @@ const useAgencyProjectWrapperAnimation = () => {
   // is hover logic start here
   const isHover = useIsHoverDevice();
   // is hover logic ends here
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!wrapper.current || !isHover) return;
 
     const ctx = gsap.context(() => {

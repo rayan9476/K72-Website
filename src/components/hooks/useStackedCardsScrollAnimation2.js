@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useIsHoverDevice } from "./useIsHoverDevice";
@@ -16,12 +16,13 @@ export function useStackedCardsScrollAnimation2(
   const isHover = useIsHoverDevice();
   // is hover logic ends here
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!isHover || !wrapper || !card || !pin) return;
     const ctx = gsap.context(() => {
       const cards = gsap.utils.toArray(card);
       gsap.set(cards, {
         yPercent: 100,
+        force3D: true,
       });
       const tl = gsap.timeline({
         scrollTrigger: {
