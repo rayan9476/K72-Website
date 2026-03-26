@@ -8,6 +8,7 @@ import { FilterContextProvider } from "./context/FilterContextProvider.jsx";
 import ReadyContextProvider from "./context/ReadyContextProvider.jsx";
 import RouteChangeStairsContextProvider from "./context/RouteChangeStairsContextProvider.jsx";
 import RouteChangeStairs from "./components/common/RouteChangeStairs.jsx";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
@@ -17,6 +18,7 @@ createRoot(document.getElementById("root")).render(
             <ReadyContextProvider>
               <FilterContextProvider>
                 <Root />
+                <SpeedInsights />
               </FilterContextProvider>
             </ReadyContextProvider>
           </RouteChangeStairs>

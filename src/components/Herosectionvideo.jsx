@@ -1,8 +1,6 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 
 function Herosectionvideo({ type, syncRef }) {
-  const [videoReady, setVideoReady] = useState(false);
-
   const classes =
     type === "inline"
       ? "w-[21.4vw] xl:w-[15.7vw] h-[9.6vw] xl:h-[6.9vw] object-cover rounded-full"
@@ -24,25 +22,16 @@ function Herosectionvideo({ type, syncRef }) {
 
   return (
     <div className="video-wrapper flex items-center justify-center  w-full h-full ">
-      {type === "background" && (
-        <div
-          className="absolute inset-0  z-10 transition-opacity duration-100 ease-in-out pointer-events-none"
-          style={{
-            opacity: videoReady ? 0 : 1,
-            backgroundColor: "rgba(0,0,0,0.4)",
-          }}
-        />
-      )}
-
       <video
         ref={videoRef}
-        src="https://res.cloudinary.com/dd0fyuait/video/upload/v1773775714/69496b2d_eishdv.mp4"
+        poster="https://ik.imagekit.io/rayan8422/Capture_d_ecran_le_2025-09-17_a_18.11.25.jpg?tr=f-auto,w-1200,q-60"
+        src="https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_800/v1773775714/69496b2d_eishdv.mp4"
         className={classes}
         autoPlay
         loop
         muted
         playsInline
-        onCanPlay={() => setVideoReady(true)}
+        preload="auto"
       />
     </div>
   );
