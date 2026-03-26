@@ -8,8 +8,13 @@ import { FilterContext } from "../context/FilterContext";
 import { useFakeScrollbar } from "../components/hooks/useFakeScrollbar";
 import "../styles/Blogpage.css";
 import useBlogInfo from "../components/hooks/useBlogInfo";
+import useScrollToTop from "../components/hooks/useScrollToTop";
 
 function BlogInfo() {
+  // reset tu top logic start here
+  useScrollToTop();
+  // reset tu top logic ends here
+
   // blog info start here
   const BlogInfo = useBlogInfo();
   // blog info ends here

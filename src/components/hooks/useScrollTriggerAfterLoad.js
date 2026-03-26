@@ -43,7 +43,7 @@ export default function useScrollTriggerAfterLoad(data) {
       if (killed) return;
 
       // increase buffer for production
-      await new Promise((resolve) => setTimeout(resolve, 600));
+      await new Promise((resolve) => setTimeout(resolve, 300));
 
       if (killed) return;
 

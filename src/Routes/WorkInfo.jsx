@@ -24,9 +24,14 @@ import useProjectInfo from "../components/hooks/useProjectInfo";
 import { useOurProjectCardRadiusAnimation } from "../components/hooks/useOurProjectCardRadiusAnimation";
 import { useParams } from "react-router-dom";
 import NotFound from "../components/common/NotFound";
+import useScrollToTop from "../components/hooks/useScrollToTop";
 
 gsap.registerPlugin(ScrollTrigger);
 function WorkInfo() {
+  // reset tu top logic start here
+  useScrollToTop();
+  // reset tu top logic ends here
+
   const thumbRef = useRef(null);
   const { Id } = useParams();
 

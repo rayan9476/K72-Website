@@ -284,9 +284,9 @@ export const projectInfo = [
     sectionImagesSameWay: [
       {
         large:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773608146/ezgif-498c278cf0f21fa3_wvwmum.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773608146/ezgif-498c278cf0f21fa3_wvwmum.mp4",
         small:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773608146/ezgif-498c278cf0f21fa3_wvwmum.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_720,h_480/v1773608146/ezgif-498c278cf0f21fa3_wvwmum.mp4",
       },
       {
         large:
@@ -307,28 +307,28 @@ export const projectInfo = [
       },
       {
         large:
-          " https://res.cloudinary.com/dd0fyuait/video/upload/v1773608882/ezgif-439f283d7ed1680d_ibwd18.mp4",
+          " https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773608882/ezgif-439f283d7ed1680d_ibwd18.mp4",
 
         small:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773608882/ezgif-439f283d7ed1680d_ibwd18.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_720,h_480/v1773608882/ezgif-439f283d7ed1680d_ibwd18.mp4",
       },
     ],
 
     sectionImagesTwoCardSlides: [
       {
-        img: "https://res.cloudinary.com/dd0fyuait/video/upload/v1773609250/ezgif-42ba6be8e5e3c071_uagp5h.mp4",
+        img: "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773609250/ezgif-42ba6be8e5e3c071_uagp5h.mp4",
         title: "Winter will never be the same.",
       },
       {
-        img: "https://res.cloudinary.com/dd0fyuait/video/upload/v1773609308/ezgif-6186f6e41bc36f7b_tdf7yp.mp4",
+        img: "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773609308/ezgif-6186f6e41bc36f7b_tdf7yp.mp4",
         title: "Iconography",
       },
       {
-        img: "https://res.cloudinary.com/dd0fyuait/video/upload/v1773609354/ezgif-66186065355f8c5a_ury6oe.mp4",
+        img: "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773609354/ezgif-66186065355f8c5a_ury6oe.mp4",
         title: "Newsletters",
       },
       {
-        img: "https://res.cloudinary.com/dd0fyuait/video/upload/v1773609435/ezgif-64d02d90c642ece6_w66rlc.mp4",
+        img: "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773609435/ezgif-64d02d90c642ece6_w66rlc.mp4",
         title: "Instagram posts",
       },
     ],
@@ -372,7 +372,7 @@ export const projectInfo = [
       sectionImageYear: "2022",
       sectionImageButtonText: "Watch",
       sectionImageVideo:
-        "https://res.cloudinary.com/dd0fyuait/video/upload/v1773609516/Widescape_project_widescape_lancement_mashup_ThumbnaiL_anime_jvmotm.mp4",
+        "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773609516/Widescape_project_widescape_lancement_mashup_ThumbnaiL_anime_jvmotm.mp4",
 
       sectionImageVideoThumbnail: {
         large:
@@ -395,9 +395,9 @@ export const projectInfo = [
       },
       {
         large:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773609572/ezgif-57f9abed8555db1f_uh5rgm.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773609572/ezgif-57f9abed8555db1f_uh5rgm.mp4",
         small:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773609572/ezgif-57f9abed8555db1f_uh5rgm.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_720,h_480/v1773609572/ezgif-57f9abed8555db1f_uh5rgm.mp4",
       },
       {
         large:
@@ -418,25 +418,25 @@ export const projectInfo = [
     ],
 
     sectionImagesSameWay2Video: [
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773609656/Widescape_project_video_3231249874_ytniqo.mp4",
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773609708/Widescape_project_WS_video_3231955000_nlmgtf.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773609656/Widescape_project_video_3231249874_ytniqo.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773609708/Widescape_project_WS_video_3231955000_nlmgtf.mp4",
     ],
 
     sectionImagesTwoCardSlides2: [
       {
-        img: "https://res.cloudinary.com/dd0fyuait/video/upload/v1773609798/ezgif-656fcb82f61c7cbf_cg9k9b.mp4",
+        img: "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773609798/ezgif-656fcb82f61c7cbf_cg9k9b.mp4",
         title: "250cc",
       },
       {
-        img: "https://res.cloudinary.com/dd0fyuait/video/upload/v1773609828/ezgif-64c0148bed5c3d06_weyktl.mp4",
+        img: "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773609828/ezgif-64c0148bed5c3d06_weyktl.mp4",
         title: "Top view",
       },
       {
-        img: "https://res.cloudinary.com/dd0fyuait/video/upload/v1773609873/ezgif-63a4cab430fc4dac_suph0v.mp4",
+        img: "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773609873/ezgif-63a4cab430fc4dac_suph0v.mp4",
         title: "Typography",
       },
       {
-        img: "https://res.cloudinary.com/dd0fyuait/video/upload/v1773609927/ezgif-6b969c81aa44eb6f_qkjeoi.mp4",
+        img: "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773609927/ezgif-6b969c81aa44eb6f_qkjeoi.mp4",
         title: "Logo animation",
       },
     ],
@@ -444,15 +444,15 @@ export const projectInfo = [
     sectionImagesSameWay3: [
       {
         large:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773609987/ezgif-52fa7060831c4040_ohwnxs.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773609987/ezgif-52fa7060831c4040_ohwnxs.mp4",
         small:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773609987/ezgif-52fa7060831c4040_ohwnxs.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_720,h_480/v1773609987/ezgif-52fa7060831c4040_ohwnxs.mp4",
       },
       {
         large:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773610031/Widescape_project_3231955000_yfmgel.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773610031/Widescape_project_3231955000_yfmgel.mp4",
         small:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773610031/Widescape_project_3231955000_yfmgel.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_720,h_480/v1773610031/Widescape_project_3231955000_yfmgel.mp4",
       },
       {
         large:
@@ -475,9 +475,9 @@ export const projectInfo = [
         images: [
           {
             large:
-              "https://res.cloudinary.com/dd0fyuait/video/upload/v1773610127/ezgif-412fd46c548124ff_vlzd1k.mp4",
+              "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773610127/ezgif-412fd46c548124ff_vlzd1k.mp4",
             small:
-              "https://res.cloudinary.com/dd0fyuait/video/upload/v1773610127/ezgif-412fd46c548124ff_vlzd1k.mp4",
+              "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_720,h_480/v1773610127/ezgif-412fd46c548124ff_vlzd1k.mp4",
             objectFit: "object-cover",
           },
           {
@@ -491,9 +491,9 @@ export const projectInfo = [
           },
           {
             large:
-              "https://res.cloudinary.com/dd0fyuait/video/upload/v1773610173/ezgif-4e698780e96523b6_fnq1gq.mp4",
+              "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773610173/ezgif-4e698780e96523b6_fnq1gq.mp4",
             small:
-              "https://res.cloudinary.com/dd0fyuait/video/upload/v1773610173/ezgif-4e698780e96523b6_fnq1gq.mp4",
+              "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_720,h_480/v1773610173/ezgif-4e698780e96523b6_fnq1gq.mp4",
             objectFit: "object-cover",
           },
         ],
@@ -505,9 +505,9 @@ export const projectInfo = [
     footerYear: " ©2025",
 
     footerImage:
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773610212/ezgif-1a02dd19e3b3810f_fl1ils.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773610212/ezgif-1a02dd19e3b3810f_fl1ils.mp4",
     footerImageSmall:
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773610212/ezgif-1a02dd19e3b3810f_fl1ils.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_720,h_480/v1773610212/ezgif-1a02dd19e3b3810f_fl1ils.mp4",
   },
 
   {
@@ -544,9 +544,9 @@ export const projectInfo = [
       },
       {
         large:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773610466/ezgif-8ff77a2ef600e766_lxin3m.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773610466/ezgif-8ff77a2ef600e766_lxin3m.mp4",
         small:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773610466/ezgif-8ff77a2ef600e766_lxin3m.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_720,h_480/v1773610466/ezgif-8ff77a2ef600e766_lxin3m.mp4",
       },
     ],
 
@@ -651,9 +651,9 @@ export const projectInfo = [
       },
       {
         large:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773610748/ezgif-806f9a88f31cdc4c_vejzyl.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773610748/ezgif-806f9a88f31cdc4c_vejzyl.mp4",
         small:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773610748/ezgif-806f9a88f31cdc4c_vejzyl.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_720,h_480/v1773610748/ezgif-806f9a88f31cdc4c_vejzyl.mp4",
       },
     ],
 
@@ -723,7 +723,7 @@ export const projectInfo = [
       sectionImageButtonText: "Watch",
 
       sectionImageVideo:
-        "https://res.cloudinary.com/dd0fyuait/video/upload/v1773681885/Opto-Reseau_Video_3245986933_u3tfrv.mp4",
+        "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773681885/Opto-Reseau_Video_3245986933_u3tfrv.mp4",
       sectionImageVideoThumbnail: {
         large:
           "https://ik.imagekit.io/rayan8422/Opto-Reseau_OPTO_videothumbnail%20(1).webp?tr=f-auto,w-1200,q-60",
@@ -799,28 +799,28 @@ export const projectInfo = [
     sectionImages: [
       {
         large:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773681960/ezgif-8e72403fe12aa7e5_si75v9.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773681960/ezgif-8e72403fe12aa7e5_si75v9.mp4",
         small:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773681960/ezgif-8e72403fe12aa7e5_si75v9.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200,h_480/v1773681960/ezgif-8e72403fe12aa7e5_si75v9.mp4",
       },
     ],
 
     sectionVideo: [
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773682299/Opto-Reseau_Video_3245986933_po7dvz.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773682299/Opto-Reseau_Video_3245986933_po7dvz.mp4",
     ],
 
     sectionImages2: [
       {
         large:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773682469/ezgif-689bde32ac46b3d5_dftwuc.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773682469/ezgif-689bde32ac46b3d5_dftwuc.mp4",
         small:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773682469/ezgif-689bde32ac46b3d5_dftwuc.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_720,h_480/v1773682469/ezgif-689bde32ac46b3d5_dftwuc.mp4",
       },
       {
         large:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773682612/ezgif-6efa824f16af3a3b_rmcg3o.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773682612/ezgif-6efa824f16af3a3b_rmcg3o.mp4",
         small:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773682612/ezgif-6efa824f16af3a3b_rmcg3o.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_720,h_480/v1773682612/ezgif-6efa824f16af3a3b_rmcg3o.mp4",
       },
       {
         large:
@@ -947,7 +947,7 @@ export const projectInfo = [
     ],
 
     sectionVideo: [
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773682834/Coup-Fumant_Project_3063618994_jirihj.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773682834/Coup-Fumant_Project_3063618994_jirihj.mp4",
     ],
 
     sectionImages2: [
@@ -1002,8 +1002,8 @@ export const projectInfo = [
     ],
 
     sectionImagesSameWay2Video: [
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773682881/Coup-Fumant_Project_3063618994_rv5gnn.mp4",
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773682946/Coup-Fumant_Project_3063613051_ptmgxq.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773682881/Coup-Fumant_Project_3063618994_rv5gnn.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773682946/Coup-Fumant_Project_3063613051_ptmgxq.mp4",
     ],
 
     sectionImagesTwoCardSlides2: [
@@ -1071,7 +1071,7 @@ export const projectInfo = [
       image1: {
         src: "https://ik.imagekit.io/rayan8422/Coup-Fumant_opto_thumbnail1.webp?tr=f-auto,w-1200,q-60",
         small:
-          "https://ik.imagekit.io/rayan8422/Coup-Fumant_opto_thumbnail1.webp?tr=f-auto,w-720,h-480,q-60",
+          "https://ik.imagekit.io/rayan8422/Coup-Fumant_opto_thumbnail1.webpp?tr=f-auto,w-720,h-480,q-60",
         placeholder:
           "https://ik.imagekit.io/rayan8422/Coup-Fumant_opto_thumbnail1.webp?tr=f-auto,w-20,q-10,bl-6",
 
@@ -1153,9 +1153,9 @@ export const projectInfo = [
       },
       {
         large:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773683109/ezgif-869253ea5b68e278_hdeqdf.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773683109/ezgif-869253ea5b68e278_hdeqdf.mp4",
         small:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773683109/ezgif-869253ea5b68e278_hdeqdf.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_720,h_480/v1773683109/ezgif-869253ea5b68e278_hdeqdf.mp4",
       },
       {
         large:
@@ -1183,9 +1183,9 @@ export const projectInfo = [
       },
       {
         large:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773683155/ezgif-8a5293a02b70b365_tjtoxo.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773683155/ezgif-8a5293a02b70b365_tjtoxo.mp4",
         small:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773683155/ezgif-8a5293a02b70b365_tjtoxo.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_720,h_480/v1773683155/ezgif-8a5293a02b70b365_tjtoxo.mp4",
       },
     ],
 
@@ -1582,7 +1582,7 @@ export const projectInfo = [
     projectInfoCenterCard3: [
       {
         video:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773683620/ezgif-82deb9ec04c59473_cpuxmj.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773683620/ezgif-82deb9ec04c59473_cpuxmj.mp4",
       },
     ],
 
@@ -1622,9 +1622,9 @@ export const projectInfo = [
     footerYear: " ©2021",
 
     footerImage:
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773683662/ezgif-8c7f279d7712d13d_gngoqf.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773683662/ezgif-8c7f279d7712d13d_gngoqf.mp4",
     footerImageSmall:
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773683662/ezgif-8c7f279d7712d13d_gngoqf.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200,h_480/v1773683662/ezgif-8c7f279d7712d13d_gngoqf.mp4",
   },
 
   {
@@ -1657,7 +1657,7 @@ export const projectInfo = [
       sectionImageYear: "2019",
       sectionImageButtonText: "Watch",
       sectionImageVideo:
-        "https://res.cloudinary.com/dd0fyuait/video/upload/v1773769759/Synesthesia_Project_Osm_Synesthesie_1_sihmou.mp4",
+        "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773769759/Synesthesia_Project_Osm_Synesthesie_1_sihmou.mp4",
       sectionImageVideoThumbnail: {
         large:
           "https://ik.imagekit.io/rayan8422/Synesthesia_Project_Capture_d_e%CC%81cran_2021-04-27_a%CC%80_19.19.14%20(1).webp?tr=f-auto,w-1200,q-60",
@@ -1689,7 +1689,7 @@ export const projectInfo = [
     projectInfoCenterCard3: [
       {
         video:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773683884/Synesthesia_Project_2647189787_mlhm1s.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773683884/Synesthesia_Project_2647189787_mlhm1s.mp4",
       },
     ],
 
@@ -2100,9 +2100,9 @@ export const projectInfo = [
       },
       {
         large:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773684208/ezgif-5c5a1aa5208cdac4_k3ebd2.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773684208/ezgif-5c5a1aa5208cdac4_k3ebd2.mp4",
         small:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773684208/ezgif-5c5a1aa5208cdac4_k3ebd2.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_720,h_480/v1773684208/ezgif-5c5a1aa5208cdac4_k3ebd2.mp4",
       },
       {
         large:
@@ -2232,14 +2232,14 @@ export const projectInfo = [
     projectInfoCenterCard3: [
       {
         video:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773684371/ezgif-52004934db7a1ba1_fx52i0.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773684371/ezgif-52004934db7a1ba1_fx52i0.mp4",
       },
     ],
 
     projectInfoCenterCard4: [
       {
         video:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773684410/ezgif-3f0450930a3c3f50_opbqbf.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773684410/ezgif-3f0450930a3c3f50_opbqbf.mp4",
       },
     ],
 
@@ -2286,7 +2286,7 @@ export const projectInfo = [
       sectionImageYear: "2020",
       sectionImageButtonText: "Watch",
       sectionImageVideo:
-        "https://res.cloudinary.com/dd0fyuait/video/upload/v1773684474/We_See_Project_Opto-Reseau_-_ANTHONY_15sec_AN_-_WEB_YouTube_frkttv.mp4",
+        "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773684474/We_See_Project_Opto-Reseau_-_ANTHONY_15sec_AN_-_WEB_YouTube_frkttv.mp4",
       sectionImageVideoThumbnail: {
         large:
           "https://ik.imagekit.io/rayan8422/We_See_Project_OPTO-RESEAU_Anthony_Thumbnail%20(1).webp?tr=f-auto,w-1200,q-60",
@@ -2346,7 +2346,7 @@ export const projectInfo = [
       sectionImageYear: "2020",
       sectionImageButtonText: "Watch",
       sectionImageVideo:
-        "https://res.cloudinary.com/dd0fyuait/video/upload/v1773684538/We_See_Project_Opto-Reseau_-_GERTRUD_15sec_AN_kcu4a7.mp4",
+        "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773684538/We_See_Project_Opto-Reseau_-_GERTRUD_15sec_AN_kcu4a7.mp4",
       sectionImageVideoThumbnail: {
         large:
           "https://ik.imagekit.io/rayan8422/We_See_Project_OPTO-RESEAU_Gertrud%20(1).webp?tr=f-auto,w-1200,q-60",
@@ -2361,15 +2361,15 @@ export const projectInfo = [
       images: [
         {
           large:
-            "https://res.cloudinary.com/dd0fyuait/video/upload/v1773684585/ezgif-3672e12a8180ecf8_ezljiw.mp4",
+            "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773684585/ezgif-3672e12a8180ecf8_ezljiw.mp4",
           small:
-            "https://res.cloudinary.com/dd0fyuait/video/upload/v1773684585/ezgif-3672e12a8180ecf8_ezljiw.mp4",
+            "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_720,h_480/v1773684585/ezgif-3672e12a8180ecf8_ezljiw.mp4",
         },
         {
           large:
-            "https://res.cloudinary.com/dd0fyuait/video/upload/v1773684632/ezgif-3cb28db35207e92f_fekejr.mp4",
+            "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773684632/ezgif-3cb28db35207e92f_fekejr.mp4",
           small:
-            "https://res.cloudinary.com/dd0fyuait/video/upload/v1773684632/ezgif-3cb28db35207e92f_fekejr.mp4",
+            "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_720,h_480/v1773684632/ezgif-3cb28db35207e92f_fekejr.mp4",
         },
       ],
       text: "MAKING OF — BEHIND THE SCENE",
@@ -2447,7 +2447,7 @@ export const projectInfo = [
       sectionImageYear: "2020",
       sectionImageButtonText: "Watch",
       sectionImageVideo:
-        "https://res.cloudinary.com/dd0fyuait/video/upload/v1773684762/Open_Project_PME-MTL_ONLINE_30s_xcghj1.mp4",
+        "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773684762/Open_Project_PME-MTL_ONLINE_30s_xcghj1.mp4",
       sectionImageVideoThumbnail: {
         large:
           "https://ik.imagekit.io/rayan8422/Open_Project_PME-MTL_Campagne-vid_thumbnail%20(1).webp?tr=f-auto,w-1200,q-60",
@@ -2512,7 +2512,7 @@ export const projectInfo = [
       sectionImageYear: "2020",
       sectionImageButtonText: "Watch",
       sectionImageVideo:
-        "https://res.cloudinary.com/dd0fyuait/video/upload/v1773684815/Open_Project_OMNICHEM_6sec_16x9_FR_200716_ochjse.mp4",
+        "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773684815/Open_Project_OMNICHEM_6sec_16x9_FR_200716_ochjse.mp4",
       sectionImageVideoThumbnail: {
         large:
           "https://ik.imagekit.io/rayan8422/Open_Project_OMNICHEM_Thumbnail-vid%20(1).webp?tr=f-auto,w-1200,q-60",
@@ -2536,7 +2536,7 @@ export const projectInfo = [
       sectionImageYear: "2020",
       sectionImageButtonText: "Watch",
       sectionImageVideo:
-        "https://res.cloudinary.com/dd0fyuait/video/upload/v1773684926/Open_Project_PIXMO_6sec_16x9_FR_200716_w2cfez.mp4",
+        "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773684926/Open_Project_PIXMO_6sec_16x9_FR_200716_w2cfez.mp4",
       sectionImageVideoThumbnail: {
         large:
           "https://ik.imagekit.io/rayan8422/Open_Project_PIXMOB_Thumbnail-vid%20(1).webp?tr=f-auto,w-1200,q-60",
@@ -2550,7 +2550,7 @@ export const projectInfo = [
     projectInfoCenterCard3: [
       {
         video:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773684976/ezgif-8629527a84842b3b_wf1wfk.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773684976/ezgif-8629527a84842b3b_wf1wfk.mp4",
       },
     ],
 
@@ -2568,21 +2568,21 @@ export const projectInfo = [
     projectInfoCenterCard5: [
       {
         video:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773685019/ezgif-2a81ff43a4a3d57c_cbmltq.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773685019/ezgif-2a81ff43a4a3d57c_cbmltq.mp4",
       },
     ],
 
     sectionImagesTwoCardSlides4: [
       {
         video:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773685076/Open_Project_TEMPEHINE_6sec_16x9_FR_200716_b3rvfs.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773685076/Open_Project_TEMPEHINE_6sec_16x9_FR_200716_b3rvfs.mp4",
         VideoThumbnail:
           "https://ik.imagekit.io/rayan8422/Open_Project_TEMPEHINE_Thumbnail-vid.webp?tr=f-auto,w-1200,q-60",
         title: "Tempehine",
       },
       {
         video:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773685128/Open_Project_4ORIGINES_6sec_16x9_FR_200716_ukumms.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773685128/Open_Project_4ORIGINES_6sec_16x9_FR_200716_ukumms.mp4",
         VideoThumbnail:
           "https://ik.imagekit.io/rayan8422/Open_Project_ORIGINES_Thumbnail-vid.webp?tr=f-auto,w-1200,q-60",
         title: "Pixmob",
@@ -2613,21 +2613,21 @@ export const projectInfo = [
     sectionImagesTwoCardSlides5: [
       {
         video:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773685185/Open_Project_E%CC%81TATDECHOC_6sec_16x9_FR_200716_obgrgd.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773685185/Open_Project_E%CC%81TATDECHOC_6sec_16x9_FR_200716_obgrgd.mp4",
         VideoThumbnail:
           "https://ik.imagekit.io/rayan8422/Open_Project_ETAT-CHOC_Thumbnail-vid.webp?tr=f-auto,w-1200,q-60",
         title: "État de Choc",
       },
       {
         video:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773685265/Open_Project_DYMESO_6sec_16x9_FR_200716_iitjl1.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773685265/Open_Project_DYMESO_6sec_16x9_FR_200716_iitjl1.mp4",
         VideoThumbnail:
           "https://ik.imagekit.io/rayan8422/Open_Project_ETAT-CHOC_Thumbnail-vid.webp?tr=f-auto,w-1200,q-60",
         title: "Dymedso",
       },
       {
         video:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773685339/Open_Project_CASTOR_6sec_16x9_FR_200716_syreew.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773685339/Open_Project_CASTOR_6sec_16x9_FR_200716_syreew.mp4",
         VideoThumbnail:
           "https://ik.imagekit.io/rayan8422/Open_Project_CASTOR_Thumbnail-vid.webp?tr=f-auto,w-1200,q-60",
         title: "Castor",
@@ -2669,7 +2669,9 @@ export const projectInfo = [
 
     footerYear: " ©2020",
     footerImage:
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773685391/ezgif-2c276bb9c4049b5d_yeimr5.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773685391/ezgif-2c276bb9c4049b5d_yeimr5.mp4",
+    footerImageSmall:
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_720,h_480/v1773685391/ezgif-2c276bb9c4049b5d_yeimr5.mp4",
   },
 
   {
@@ -2703,7 +2705,7 @@ export const projectInfo = [
       sectionImageYear: "2019",
       sectionImageButtonText: "Watch",
       sectionImageVideo:
-        "https://res.cloudinary.com/dd0fyuait/video/upload/v1773685451/Fruite_Project_Fruite_Grill_15EN_YOUTUBE_lt6ene.mp4",
+        "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773685451/Fruite_Project_Fruite_Grill_15EN_YOUTUBE_lt6ene.mp4",
       sectionImageVideoThumbnail: {
         large:
           "https://ik.imagekit.io/rayan8422/Fruite_Project_Fruite_video_grill_thumbnail%20(1).webp?tr=f-auto,w-1200,q-60",
@@ -2752,7 +2754,7 @@ export const projectInfo = [
     projectInfoCenterCard3: [
       {
         video:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773685499/Fruite_Project_1534532515_lpovcx.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773685499/Fruite_Project_1534532515_lpovcx.mp4",
       },
     ],
 
@@ -2767,30 +2769,30 @@ export const projectInfo = [
       },
     ],
     sectionImagesSameWay2Video: [
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773685553/Fruite_Project_1534630883_whebik.mp4",
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773685587/Fruite_Project_2625015403_upfzeo.mp4",
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773685623/Fruite_Project_2624830179_yis0eg.mp4",
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773685654/Fruite_Project_2624580229_zhhq0x.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773685553/Fruite_Project_1534630883_whebik.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773685587/Fruite_Project_2625015403_upfzeo.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773685623/Fruite_Project_2624830179_yis0eg.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773685654/Fruite_Project_2624580229_zhhq0x.mp4",
     ],
 
     sectionImages: [
       {
         large:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773685701/ezgif-668e1dcc0e0acf14_i2szpl.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773685701/ezgif-668e1dcc0e0acf14_i2szpl.mp4",
         small:
-          "/https://res.cloudinary.com/dd0fyuait/video/upload/v1773685701/ezgif-668e1dcc0e0acf14_i2szpl.mp4",
+          "/https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_720,h_480/v1773685701/ezgif-668e1dcc0e0acf14_i2szpl.mp4",
       },
     ],
 
     sectionVideo: [
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773685770/Fruite_Project_Fruite_Grill_15EN_YOUTUBE_kzpi5b.mp4",
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773685888/Fruite_Project_Fruite_Bibittes_15EN_YOUTUBE_fd4i3t.mp4",
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773685940/Fruite_Project_Fruite_Plage_15EN_YOUTUBE_hzxq7m.mp4",
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773685973/Fruite_Project_2624580229_czhl37.mp4",
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773686004/Fruite_Project_1534532515_pw10ua.mp4",
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773686034/Fruite_Project_1534630883_v0ynqm.mp4",
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773686085/Fruite_Project_2625015403_s6scdf.mp4",
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773686116/Fruite_Project_2624830179_goratb.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773685770/Fruite_Project_Fruite_Grill_15EN_YOUTUBE_kzpi5b.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773685888/Fruite_Project_Fruite_Bibittes_15EN_YOUTUBE_fd4i3t.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773685940/Fruite_Project_Fruite_Plage_15EN_YOUTUBE_hzxq7m.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773685973/Fruite_Project_2624580229_czhl37.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773686004/Fruite_Project_1534532515_pw10ua.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773686034/Fruite_Project_1534630883_v0ynqm.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773686085/Fruite_Project_2625015403_s6scdf.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773686116/Fruite_Project_2624830179_goratb.mp4",
     ],
 
     AgencyourProjectImages: {
@@ -2828,7 +2830,9 @@ export const projectInfo = [
     footerYear: " ©2019",
 
     footerImage:
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773686165/ezgif-63a3afefa3e54c51_nwefni.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773686165/ezgif-63a3afefa3e54c51_nwefni.mp4",
+    footerImageSmall:
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_720,h_480/v1773686165/ezgif-63a3afefa3e54c51_nwefni.mp4",
   },
 
   {
@@ -2894,14 +2898,14 @@ export const projectInfo = [
     projectInfoCenterCard3: [
       {
         video:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773686212/Coop_Project_2649321343_rfu8yy.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773686212/Coop_Project_2649321343_rfu8yy.mp4",
       },
     ],
 
     sectionImagesSameWay2Video: [
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773686258/Coop_Project_2649317845_ype7hj.mp4",
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773686296/Coop_Project_2649321663_sbxfvl.mp4",
-      "https://res.cloudinary.com/dd0fyuait/video/upload/v1773686337/Coop_Project_2649467343_zzvcsb.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773686258/Coop_Project_2649317845_ype7hj.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773686296/Coop_Project_2649321663_sbxfvl.mp4",
+      "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773686337/Coop_Project_2649467343_zzvcsb.mp4",
     ],
 
     sectionImages: [
@@ -3033,7 +3037,7 @@ export const projectInfo = [
     projectInfoCenterCard5: [
       {
         video:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773686394/ezgif-6bb9dd09e5d74934_juin08.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773686394/ezgif-6bb9dd09e5d74934_juin08.mp4",
       },
     ],
 
@@ -3082,9 +3086,9 @@ export const projectInfo = [
       },
       {
         large:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773686449/ezgif-5f4ebb6b507f0bce_in1hbb.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_1200/v1773686449/ezgif-5f4ebb6b507f0bce_in1hbb.mp4",
         small:
-          "https://res.cloudinary.com/dd0fyuait/video/upload/v1773686449/ezgif-5f4ebb6b507f0bce_in1hbb.mp4",
+          "https://res.cloudinary.com/dd0fyuait/video/upload/q_auto,f_auto,vc_auto,w_720,h_480/v1773686449/ezgif-5f4ebb6b507f0bce_in1hbb.mp4",
       },
     ],
 

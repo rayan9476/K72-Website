@@ -5,15 +5,18 @@ import { useIsHoverDevice } from "./useIsHoverDevice";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.defaults({ overwrite: "auto" });
-export default function useCenterCardAnimation(sectionRef, ImageRef) {
+export default function useCenterCardAnimation(sectionRef, ImageRef, VideoRef) {
   // is hover logic start here
   const isHover = useIsHoverDevice();
   // is hover logic ends here
   useLayoutEffect(() => {
-    if (!isHover || !sectionRef.current || !ImageRef.current) return;
+    if (!isHover || !sectionRef.current) return;
 
     const ctx = gsap.context(() => {
-      gsap.to(ImageRef.current, {
+      const target = ImageRef.current || VideoRef.current;
+      if (!target) return;
+
+      gsap.to(target, {
         y: 300,
 
         duration: 1.2,

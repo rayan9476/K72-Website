@@ -16,10 +16,15 @@ import { useOurProjectCardRadiusAnimation } from "../components/hooks/useOurProj
 import { useFakeScrollbar } from "../components/hooks/useFakeScrollbar";
 import { AgencyourProjectImages } from "../Data/AgencyOurProjectData";
 import { useLayoutEffect } from "react";
+import useScrollToTop from "../components/hooks/useScrollToTop";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function Agency() {
+  // reset tu top logic start here
+  useScrollToTop();
+  // reset tu top logic ends here
+
   //  dynamic page name change  logic start here
   useLayoutEffect(() => {
     document.title = "About — K72 Agency";

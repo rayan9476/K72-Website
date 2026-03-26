@@ -9,8 +9,13 @@ import { useFakeScrollbar } from "../components/hooks/useFakeScrollbar";
 import { FilterContext } from "../context/FilterContext";
 import { filters } from "../Data/blogData";
 import "../styles/Blogpage.css";
+import useScrollToTop from "../components/hooks/useScrollToTop";
 
 function Blog() {
+  // reset tu top logic start here
+  useScrollToTop();
+  // reset tu top logic ends here
+
   // filtering  logic start here
   const { activeFilter } = useContext(FilterContext);
   const { filteredData1, filteredData2 } = useBlogFilterByQuery(activeFilter);
@@ -20,7 +25,6 @@ function Blog() {
   useFakeScrollbar(thumbRef, {
     bgColor: "#7F7F7F",
   });
-
 
   //  dynamic page name change  logic start here
   useLayoutEffect(() => {

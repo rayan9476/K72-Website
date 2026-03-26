@@ -13,8 +13,12 @@ const Footer = React.lazy(() => import("../components/common/Footer"));
 import WorkCards from "../components/WorkCards";
 import { useFakeScrollbar } from "../components/hooks/useFakeScrollbar";
 import { images } from "../Data/WorkCardsSectionData";
-
+import useScrollToTop from "../components/hooks/useScrollToTop";
 function Work() {
+  // reset tu top logic start here
+  useScrollToTop();
+  // reset tu top logic ends here
+
   //  dynamic page name change  logic start here
   useEffect(() => {
     document.title = "Work — K72 Agency";

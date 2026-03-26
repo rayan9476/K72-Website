@@ -9,6 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 function ProjectInfoCenterCardSection({ cardsImages }) {
   const sectionRef = useRef(null);
   const ImageRef = useRef(null);
+  const VideoRef = useRef(null);
   const imageContainerRef = useRef(null);
 
   const card = cardsImages?.[0];
@@ -24,12 +25,12 @@ function ProjectInfoCenterCardSection({ cardsImages }) {
 
   // image aniamtion start here
 
-  useCenterCardAnimation(sectionRef, ImageRef);
+  useCenterCardAnimation(sectionRef, ImageRef, VideoRef);
   // image aniamtion ends here
 
   const file = cardsImages?.[0];
 
-  const renderMedia = (media, ref, scrollImage = "") => {
+  const renderMedia = (media, ImageRef, VideoRef, scrollImage = "") => {
     const url = media?.large;
 
     if (
@@ -38,6 +39,7 @@ function ProjectInfoCenterCardSection({ cardsImages }) {
     ) {
       return (
         <video
+          ref={VideoRef}
           autoPlay
           muted
           loop
@@ -52,13 +54,13 @@ function ProjectInfoCenterCardSection({ cardsImages }) {
       <picture>
         <source srcSet={media?.small} type="image/webp" />
         <img
-          ref={ref}
+          ref={ImageRef}
           src={url}
           className={`is-inview -lazy-loaded bg-[rgba(0,0,0,0.1)] w-full h-full ${
             !isHover ? "object-cover" : media?.objectFit || "object-cover"
           } ${scrollImage}`}
           style={{
-            backgroundImage: `url(${ref?.placeholder})`,
+            backgroundImage: `url(${url?.placeholder})`,
             backgroundSize: "cover",
             transition: "background-image 300ms ease",
           }}
@@ -80,7 +82,12 @@ function ProjectInfoCenterCardSection({ cardsImages }) {
         <div className="c-fancy-gallery md:[direction:ltr] ">
           <div className="c-fancy-gallery_head relative flex mt-48 md:mt-[28rem] lg:mt-[34rem] xl:mt-[36rem] 2xl:mt-[30rem] ">
             <figure className="c-fancy-gallery_head_small   is-inview  w-[40vw] pl-0 relative z-10 -mt-[8%] lg:-mt-[10%] xl:-mt-[14%] 2xl:-mt-[16%] 3xl:-mt-[18%] shrink-0 lg:w-[calc((100vw-13.125rem)*9/20+7.5rem)] lg:pl-[calc((100vw-13.125rem)*1/20+1.25rem)]">
-              {renderMedia(file?.images?.[0], ImageRef, "scroll-image")}
+              {renderMedia(
+                file?.images?.[0],
+                ImageRef,
+                VideoRef,
+                "scroll-image",
+              )}
             </figure>
 
             <figure className="c-fancy-gallery_head_large hidden  overflow-hidden grow ml-[calc((100vw-13.125rem)*-3/20+-1.875rem)] rounded-[3.5rem]">
@@ -99,7 +106,7 @@ function ProjectInfoCenterCardSection({ cardsImages }) {
             >
               {card?.images?.[1] && (
                 <figure
-                  className={`c-fancy-gallery_intro card bg-[rgba(0,0,0,0.1)] ${!isHover ? "" : "absolute h-full top-0 left-0"}  card_image pb-[2.1875rem] md:pb-[6.5625rem] lg:mb-[7.03125rem] xl:mb-8`}
+                  className={`c-fancy-gallery_intro card  ${!isHover ? "" : "absolute h-full top-0 left-0"}  card_image pb-[2.1875rem] md:pb-[6.5625rem] lg:mb-[7.03125rem] xl:mb-8`}
                 >
                   <picture>
                     <source
@@ -121,14 +128,14 @@ function ProjectInfoCenterCardSection({ cardsImages }) {
               )}
               {card?.images?.[2] && (
                 <figure
-                  className={`c-fancy-gallery_intro card bg-[rgba(0,0,0,0.1)] ${!isHover ? "" : "absolute h-full top-0 left-0"}  card_image pb-[2.1875rem] md:pb-[6.5625rem] lg:mb-[7.03125rem] xl:mb-8`}
+                  className={`c-fancy-gallery_intro card  ${!isHover ? "" : "absolute h-full top-0 left-0"}  card_image pb-[2.1875rem] md:pb-[6.5625rem] lg:mb-[7.03125rem] xl:mb-8`}
                 >
                   {renderMedia(file?.images?.[2])}
                 </figure>
               )}
               {card?.images?.[3] && (
                 <figure
-                  className={`c-fancy-gallery_intro card bg-[rgba(0,0,0,0.1)] ${!isHover ? "" : "absolute h-full  top-0 left-0"}  card_image pb-[2.1875rem] md:pb-[6.5625rem] lg:mb-[7.03125rem] xl:mb-8`}
+                  className={`c-fancy-gallery_intro card  ${!isHover ? "" : "absolute h-full  top-0 left-0"}  card_image pb-[2.1875rem] md:pb-[6.5625rem] lg:mb-[7.03125rem] xl:mb-8`}
                 >
                   <picture>
                     <source
