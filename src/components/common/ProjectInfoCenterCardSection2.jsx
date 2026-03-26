@@ -36,7 +36,7 @@ function ProjectInfoCenterCardSection2({ cardsImages }) {
           loop
           playsInline
           src={url}
-          className={`cards_image_1  w-full h-full bg-[rgba(0,0,0,0.1)] lg:object-cover rounded-[3.0625rem]   lg:rounded-[3.28125rem] ${cards_image_1}`}
+          className={`cards_image_1  w-full h-full  lg:object-cover rounded-[3.0625rem]   lg:rounded-[3.28125rem] ${cards_image_1}`}
         />
       );
     }
@@ -51,7 +51,7 @@ function ProjectInfoCenterCardSection2({ cardsImages }) {
         <img
           src={media?.large}
           alt="cardsimage"
-          className={`cards_image_1  w-full h-full bg-[rgba(0,0,0,0.1)]  lg:object-cover rounded-[3.0625rem]   lg:rounded-[3.28125rem] ${cards_image_1}`}
+          className={`cards_image_1  w-full h-full   lg:object-cover rounded-[3.0625rem]   lg:rounded-[3.28125rem] ${cards_image_1}`}
           loading="lazy"
           style={{
             backgroundImage: `url(${media?.placeholder})`,

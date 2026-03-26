@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useIsHoverDevice } from "./useIsHoverDevice";
@@ -14,7 +14,7 @@ export default function useFooterImageScrollAnimation(
   const isHover = useIsHoverDevice();
   // is hover logic ends here
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!isHover || !data || !footerRef.current) return;
 
     const ctx = gsap.context(() => {
@@ -32,7 +32,6 @@ export default function useFooterImageScrollAnimation(
         },
       });
     });
-    ScrollTrigger.refresh();
     return () => ctx.revert();
   }, [data, footerRef, imageRef, isHover, VideoRef]);
 }

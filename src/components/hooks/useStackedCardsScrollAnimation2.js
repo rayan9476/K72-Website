@@ -23,7 +23,6 @@ export function useStackedCardsScrollAnimation2(
       gsap.set(cards, {
         yPercent: 100,
         force3D: true,
-        autoAlpha: 0,
       });
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -38,7 +37,6 @@ export function useStackedCardsScrollAnimation2(
 
       cards.forEach((card) => {
         tl.to(card, {
-          autoAlpha: 1,
           yPercent: yPercent,
           ease: "none",
         });

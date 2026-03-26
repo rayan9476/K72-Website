@@ -24,7 +24,7 @@ export default function Root() {
 
     let timeout;
 
-    if (!isBackForward) {
+    if (!isBackForward || location.pathname === "/en/work/oka") {
       timeout = setTimeout(() => {
         setReady(false);
       }, 200);
