@@ -10,6 +10,8 @@ export default function useScrollTriggerAfterLoad(data) {
 
     let killed = false;
 
+    document.getElementById("main_content_hide_gsap").style.opacity = "0";
+
     const waitForMedia = (container = document) => {
       const images = [...container.querySelectorAll("img")];
       const videos = [...container.querySelectorAll("video")];
@@ -60,6 +62,11 @@ export default function useScrollTriggerAfterLoad(data) {
       // Final safety refresh AFTER Lenis + layout
       requestAnimationFrame(() => {
         ScrollTrigger.refresh(true);
+
+        // reveal content after everything is ready
+        document.getElementById("main_content_hide_gsap").style.transition =
+          "opacity 0.4s ease";
+        document.getElementById("main_content_hide_gsap").style.opacity = "1";
       });
     };
 

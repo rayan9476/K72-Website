@@ -5,12 +5,10 @@ import Loader from "./components/common/Loader";
 import { ReadyContext } from "./context/ReadyContext";
 import { useContext } from "react";
 import { gsap } from "gsap";
-import { useParams } from "react-router-dom";
 
 export default function Root() {
   const location = useLocation();
   const { ready, setReady } = useContext(ReadyContext);
-  const { Id } = useParams();
   // for loader on route change logic start here
   useLayoutEffect(() => {
     if (
@@ -29,10 +27,6 @@ export default function Root() {
       timeout = setTimeout(() => {
         setReady(false);
       }, 200);
-    } else if (location.pathname === `/en/work/${Id}`) {
-      timeout = setTimeout(() => {
-        setReady(false);
-      }, 1200);
     } else {
       setReady(false);
     }
