@@ -82,4 +82,18 @@ export default function useScrollTriggerAfterLoad(data) {
       killed = true;
     };
   }, [data, location.pathname]);
+
+  useEffect(() => {
+    const handlePageShow = (e) => {
+      if (e.persisted) {
+        requestAnimationFrame(() => {
+          window.__lenis?.resize?.();
+          ScrollTrigger.clearScrollMemory();
+          ScrollTrigger.refresh(true);
+        });
+      }
+    };
+    window.addEventListener("pageshow", handlePageShow);
+    return () => window.removeEventListener("pageshow", handlePageShow);
+  }, []);
 }
