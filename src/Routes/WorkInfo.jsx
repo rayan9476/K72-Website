@@ -574,11 +574,7 @@ function WorkInfo() {
                   )}
 
                   {data?.projectInfoCenterCard && (
-                    <div
-                      id="main_content_hide_gsap"
-                      style={{ opacity: 0 }}
-                      className="relative "
-                    >
+                    <div id="" className="relative main_content_hide_gsap">
                       <ProjectInfoCenterCardSection
                         cardsImages={data?.projectInfoCenterCard}
                       />

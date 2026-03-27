@@ -13,7 +13,11 @@ function AgencyOurProject({ projectImages }) {
 
   return (
     <>
-      <div ref={scopeRef} className="our_project_section_wrapper relative">
+      <div
+        ref={scopeRef}
+        style={{ opacity: 0 }}
+        className="our_project_section_wrapper main_content_hide_gsap relative"
+      >
         <Suspense fallback={null}>
           <Agencyourprojectwrapper images={projectImages} />
         </Suspense>

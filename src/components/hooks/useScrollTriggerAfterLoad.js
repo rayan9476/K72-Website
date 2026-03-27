@@ -10,7 +10,12 @@ export default function useScrollTriggerAfterLoad(data) {
 
     let killed = false;
 
-    document.getElementById("main_content_hide_gsap").style.opacity = "0";
+    const elements = document.querySelectorAll(".main_content_hide_gsap");
+
+    // hide all gsap animation element initally
+    elements.forEach((el) => {
+      el.style.opacity = "0";
+    });
 
     const waitForMedia = (container = document) => {
       const images = [...container.querySelectorAll("img")];
@@ -64,9 +69,10 @@ export default function useScrollTriggerAfterLoad(data) {
         ScrollTrigger.refresh(true);
 
         // reveal content after everything is ready
-        document.getElementById("main_content_hide_gsap").style.transition =
-          "opacity 0.4s ease";
-        document.getElementById("main_content_hide_gsap").style.opacity = "1";
+        elements.forEach((el) => {
+          el.style.transition = "opacity 0.4s ease";
+          el.style.opacity = "1";
+        });
       });
     };
 
