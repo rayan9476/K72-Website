@@ -11,6 +11,7 @@ function ProjectFooterSection({ data }) {
   useFooterImageScrollAnimation(data, footerRef, imageRef, VideoRef);
   //  footer wow image scroll animation ends here
 
+  // renderd based on data show image || video logic start here
   const renderMedia = (media, imageRef, VideoRef) => {
     const url = media?.footerImage;
 
@@ -53,6 +54,7 @@ function ProjectFooterSection({ data }) {
       </picture>
     );
   };
+  // renderd based on data show image || video logic ends here
 
   return (
     <>

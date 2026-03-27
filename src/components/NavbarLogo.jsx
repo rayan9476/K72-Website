@@ -18,6 +18,7 @@ export default function NavbarLogo({
     white,
   });
   // logo fill animation ends here
+
   // animation for navbar left logo for cardinfo component start here
   useNavbarLogoAnimation({ hoveredIndex, cardcontainerHover, siteLogoRef });
   // animation for navbar left logo for cardinfo component end here

@@ -5,9 +5,11 @@ function Herosectionvideo({ type, syncRef }) {
     type === "inline"
       ? "w-[21.4vw] xl:w-[15.7vw] h-[9.6vw] xl:h-[6.9vw] object-cover rounded-full"
       : "w-full  h-full object-cover";
+
+  // insure both video play same time logic start here
   const localRef = useRef(null);
   const videoRef = type === "background" ? syncRef : localRef;
-  // insure both video play same time logic start here
+
   useEffect(() => {
     if (type === "inline" && syncRef?.current && videoRef.current) {
       const syncEl = syncRef.current;

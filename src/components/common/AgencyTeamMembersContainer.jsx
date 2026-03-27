@@ -9,6 +9,7 @@ function AgencyTeamMembersContainer({ data }) {
   const isHover = useIsHoverDevice();
   // is hover logic ends here
 
+  // animation for section1 start here
   const section1 = useRef(null);
   useLayoutEffect(() => {
     if (!isHover) return;
@@ -23,6 +24,7 @@ function AgencyTeamMembersContainer({ data }) {
 
     return () => st.kill();
   }, [isHover]);
+  // animation for section1 ends here
 
   return (
     <div className="team_wrapper relative mb-24 md:mb-48 lg:mb-0 top-0 w-full h-full lg:block lg:h-screen xl:h-screen lg:w-[100vw]">

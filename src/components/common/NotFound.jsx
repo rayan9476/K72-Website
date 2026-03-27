@@ -8,11 +8,13 @@ import "../../styles/contact.css";
 const Footer = lazy(() => import("./Footer"));
 
 function NotFound() {
+  // fake scroll bar logic start here
   const thumbRef = useRef(null);
-
   useFakeScrollbar(thumbRef, {
     bgColor: "#a7a9d6",
   });
+  // fake scroll bar logic ends here
+
   const navigate = useNavigate();
 
   return (

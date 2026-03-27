@@ -5,11 +5,12 @@ import { IoReloadCircleOutline } from "react-icons/io5";
 import { lazy, Suspense } from "react";
 const Footer = lazy(() => import("./Footer"));
 function ErrorFallback() {
+  // fake scroll bar logic start here
   const thumbRef = useRef(null);
-
   useFakeScrollbar(thumbRef, {
     bgColor: "#a7a9d6",
   });
+  // fake scroll bar logic ends here
 
   return (
     <>

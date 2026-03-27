@@ -9,7 +9,7 @@ import { gsap } from "gsap";
 export default function Root() {
   const location = useLocation();
   const { ready, setReady } = useContext(ReadyContext);
-  // for loader on route change logic start here
+  //logic for loader on route change logic start here
   useLayoutEffect(() => {
     if (
       location.pathname === "/en/contact" ||
@@ -38,7 +38,6 @@ export default function Root() {
   // for loader on route change logic start here
 
   // for loader on initailly load logic start here
-
   useEffect(() => {
     const htmlLoader = document.getElementById("initial-loader");
 
@@ -67,9 +66,9 @@ export default function Root() {
   }, [setReady]);
   // for loader on initailly load logic ends here
 
+  // first render not works logic start here
   const isFirst = useRef(true);
 
-  // first render not works logic start here
   useEffect(() => {
     if (isFirst.current) {
       isFirst.current = false;

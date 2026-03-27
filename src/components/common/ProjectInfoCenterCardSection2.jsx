@@ -12,7 +12,6 @@ function ProjectInfoCenterCardSection2({ cardsImages }) {
   const wrapper = useRef(null);
 
   // stacked cards animation start here
-
   useStackedCardsScrollAnimation2(
     wrapper,
     ".center_card_animate",
@@ -22,6 +21,7 @@ function ProjectInfoCenterCardSection2({ cardsImages }) {
   );
   // stacked cards animation ends here
 
+  // renderd based on data show image || video logic start here
   const renderMedia = (media, cards_image_1 = "") => {
     const url = media?.large;
 
@@ -65,6 +65,7 @@ function ProjectInfoCenterCardSection2({ cardsImages }) {
       </picture>
     );
   };
+  // renderd based on data show image || video logic ends here
 
   return (
     <>

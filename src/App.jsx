@@ -49,7 +49,7 @@ function App() {
       lerp: 0.04,
       smoothWheel: true,
       smoothTouch: false,
-      keyboard: true,
+      keyboard: false,
     });
 
     lenisRef.current = lenis;
@@ -59,6 +59,37 @@ function App() {
       lenis.raf(time);
       rafRef.current = requestAnimationFrame(raf);
     };
+
+    // scroll listener for key events
+    window.addEventListener("keydown", (e) => {
+      const step = 120;
+
+      if (
+        [
+          "ArrowDown",
+          "ArrowUp",
+          "PageDown",
+          "PageUp",
+          "Home",
+          "End",
+          " ",
+        ].includes(e.key)
+      ) {
+        e.preventDefault();
+      }
+
+      if (e.key === "ArrowDown")
+        lenis.scrollTo(lenis.scroll + step, { duration: 0.6 });
+      if (e.key === "ArrowUp")
+        lenis.scrollTo(lenis.scroll - step, { duration: 0.6 });
+
+      if (e.key === "PageDown" || e.key === " ")
+        lenis.scrollTo(lenis.scroll + window.innerHeight);
+      if (e.key === "PageUp") lenis.scrollTo(lenis.scroll - window.innerHeight);
+
+      if (e.key === "Home") lenis.scrollTo(0);
+      if (e.key === "End") lenis.scrollTo(document.body.scrollHeight);
+    });
 
     rafRef.current = requestAnimationFrame(raf);
 

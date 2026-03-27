@@ -15,7 +15,6 @@ function AgencyOurProject({ projectImages }) {
     <>
       <div
         ref={scopeRef}
-        style={{ opacity: 0 }}
         className="our_project_section_wrapper main_content_hide_gsap relative"
       >
         <Suspense fallback={null}>

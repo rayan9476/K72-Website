@@ -33,7 +33,6 @@ function Navbar({ hoveredIndex, cardcontainerHover }) {
         className={`fixed ${
           ismenuOpen ? " pointer-events-auto" : " pointer-events-none"
         }  w-full flex items-start justify-between p-2 lg:p-2  xl:p-2.5  z-50  `}
-        //
       >
         <div className="">
           <NavbarLogo

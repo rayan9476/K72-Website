@@ -9,6 +9,7 @@ function NavbarCloseIcon({ ismenuOpen, setismenuOpen }) {
   //  close icon animation start here
   useNavbarCloseIconAnimation(ismenuOpen);
   //  close icon animation ends here
+
   const closeIconRef = useRef(null);
 
   // is hover logic start here

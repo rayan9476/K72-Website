@@ -37,11 +37,12 @@ function Work() {
   useHoverBlink(hoveredIndex, hoveredImage, images);
   // card info blink animation ends here
 
+  // fake scroll bar logic start here
   const thumbRef = useRef(null);
-
   useFakeScrollbar(thumbRef, {
     bgColor: "#d3fd50",
   });
+  // fake scroll bar logic ends here
 
   return (
     <>

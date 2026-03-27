@@ -20,10 +20,12 @@ function BlogInfo() {
   // blog info ends here
   const { activeFilter, setActiveFilter } = useContext(FilterContext);
 
+  // fake scroll bar logic start here
   const thumbRef = useRef(null);
   useFakeScrollbar(thumbRef, {
     bgColor: "#7F7F7F",
   });
+  // fake scroll bar logic ends here
 
   //  dynamic page name change  logic start here
   useLayoutEffect(() => {

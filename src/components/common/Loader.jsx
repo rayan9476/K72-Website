@@ -5,6 +5,7 @@ import { useLocation } from "react-router-dom";
 gsap.defaults({ overwrite: "auto" });
 
 function Loader({ onComplete }) {
+  // loader animation end logic start here
   const location = useLocation();
   useEffect(() => {
     const tl = gsap.timeline({
@@ -14,6 +15,7 @@ function Loader({ onComplete }) {
 
     tl.to({}, { duration: 0.3 });
   }, [onComplete, location.pathname]);
+  // loader animation end logic ends here
 
   return (
     <>

@@ -20,11 +20,13 @@ function Blog() {
   const { activeFilter } = useContext(FilterContext);
   const { filteredData1, filteredData2 } = useBlogFilterByQuery(activeFilter);
   // filtering  logic ends here
-  const thumbRef = useRef(null);
 
+  // fake scroll bar logic start here
+  const thumbRef = useRef(null);
   useFakeScrollbar(thumbRef, {
     bgColor: "#7F7F7F",
   });
+  // fake scroll bar logic ends here
 
   //  dynamic page name change  logic start here
   useLayoutEffect(() => {

@@ -45,11 +45,12 @@ function Agency() {
   useOurProjectCardRadiusAnimation();
   // card radius animation ends here
 
+  // fake scroll bar logic start here
   const thumbRef = useRef(null);
-
   useFakeScrollbar(thumbRef, {
     bgColor: "#7F7F7F",
   });
+  // fake scroll bar logic ends here
 
   return (
     <>

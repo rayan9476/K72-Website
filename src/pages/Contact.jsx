@@ -9,9 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 function Contact() {
   //  email line animation start here
   const bannerRef = useRef(null);
-
   //  email line animation ends here
-
 
   //  dynamic page name change  logic start here
   useLayoutEffect(() => {

@@ -87,7 +87,7 @@ export function useInfiniteWheelRotate({ containerRef }) {
       else return;
 
       e.preventDefault();
-      targetY += dir * 40; // adjust scroll step
+      targetY += dir * 40;
       setRotate(dir * ROTATE_ANGLE);
       lastDir = dir;
     };
@@ -95,8 +95,6 @@ export function useInfiniteWheelRotate({ containerRef }) {
     const isTouch = "ontouchstart" in window || navigator.maxTouchPoints > 0;
 
     const animate = () => {
-      // inertia
-
       if (isTouch) {
         if (Math.abs(velocity) > 0.1) {
           targetY += velocity;
@@ -135,6 +133,7 @@ export function useInfiniteWheelRotate({ containerRef }) {
       requestAnimationFrame(animate);
     };
 
+    // add listener for mobile
     window.addEventListener("wheel", onWheel, { passive: false });
     window.addEventListener("touchstart", onTouchStart, { passive: false });
     window.addEventListener("touchmove", onTouchMove, { passive: false });
@@ -143,6 +142,7 @@ export function useInfiniteWheelRotate({ containerRef }) {
     requestAnimationFrame(animate);
 
     return () => {
+      // remove listener for clean up
       window.removeEventListener("wheel", onWheel);
       window.removeEventListener("touchstart", onTouchStart);
       window.removeEventListener("touchmove", onTouchMove);

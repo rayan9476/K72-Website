@@ -32,7 +32,6 @@ function Footer() {
   const { active, setActive } = useActiveOnClickOutside(backToTopRef);
   const { active: contentActive, setActive: setContentActive } =
     useActiveOnClickOutside(contentRef);
-
   // logic for onclick ends here
 
   return (

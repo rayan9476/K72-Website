@@ -7,8 +7,9 @@ function AgencyTeamMembersContainer2({ data }) {
   // is hover logic start here
   const isHover = useIsHoverDevice();
   // is hover logic ends here
-  const section2 = useRef(null);
 
+  // animation for section2 start here
+  const section2 = useRef(null);
   useLayoutEffect(() => {
     if (!isHover) return;
     const aspectRatio = window.innerWidth / window.innerHeight;
@@ -22,6 +23,7 @@ function AgencyTeamMembersContainer2({ data }) {
 
     return () => st.kill();
   }, [isHover]);
+  // animation for section2 ends here
 
   return (
     <>

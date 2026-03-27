@@ -15,7 +15,6 @@ function ContactHeroSection() {
 
   //  punchline animation start here
   usePunchlineAnimation(".animate_punchline", !!Sections);
-
   //  punchline animation ends here
 
   return (

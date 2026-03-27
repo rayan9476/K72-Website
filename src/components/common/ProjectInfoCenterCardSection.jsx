@@ -30,6 +30,7 @@ function ProjectInfoCenterCardSection({ cardsImages }) {
 
   const file = cardsImages?.[0];
 
+  // renderd based on data show image || video logic start here
   const renderMedia = (media, ImageRef, VideoRef, scrollImage = "") => {
     const url = media?.large;
 
@@ -71,6 +72,7 @@ function ProjectInfoCenterCardSection({ cardsImages }) {
       </picture>
     );
   };
+  // renderd based on data show image || video logic ends here
 
   return (
     <>

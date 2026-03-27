@@ -5,6 +5,8 @@ import { FilterContext } from "../context/FilterContext.js";
 
 function BlogArticle({ blogData }) {
   const { activeFilter, setActiveFilter } = useContext(FilterContext);
+
+  // normalize title logic start here
   const normalize = (str) =>
     str
       .toLowerCase()
@@ -14,6 +16,7 @@ function BlogArticle({ blogData }) {
       .replace(/[^a-z0-9-]/g, "-")
       .replace(/-+/g, "-")
       .replace(/^-|-$/g, "");
+  // normalize title logic ends here
 
   return (
     <>

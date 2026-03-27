@@ -9,6 +9,7 @@ function BlogFilters({ filtersData }) {
   const [searchParams] = useSearchParams();
   const category = searchParams.get("category");
 
+  // get category from searchparams logic start here
   useEffect(() => {
     if (category) {
       const matchingFilter = filtersData.find((f) =>
@@ -19,6 +20,7 @@ function BlogFilters({ filtersData }) {
       setActiveFilter("All");
     }
   }, [category, filtersData, setActiveFilter]);
+  // get category from searchparams logic ends here
 
   return (
     <>

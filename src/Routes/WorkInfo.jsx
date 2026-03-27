@@ -32,15 +32,16 @@ function WorkInfo() {
   useScrollToTop();
   // reset tu top logic ends here
 
-  const thumbRef = useRef(null);
   const { Id } = useParams();
 
+  // fake scroll bar logic start here
+  const thumbRef = useRef(null);
   useFakeScrollbar(thumbRef, {
     bgColor: "#d3fd50",
   });
+  // fake scroll bar logic ends here
 
   // data logic start here
-
   const [data, projectId, notFound] = useProjectInfo();
   // data logic ends here
 
