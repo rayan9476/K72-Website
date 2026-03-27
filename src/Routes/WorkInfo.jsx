@@ -16,8 +16,7 @@ import ProjectInfoOneCardSection from "../components/common/ProjectInfoOneCardSe
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ProjectInfoCenterCardSection3 from "../components/common/ProjectInfoCenterCardSection3";
 import ProjectInfoTwoCardSection2 from "../components/common/ProjectInfoTwoCardSection2";
-// const AgencyOurProject = lazy(() => import("../components/AgencyOurProject"));
-import AgencyOurProject from "../components/AgencyOurProject";
+const AgencyOurProject = lazy(() => import("../components/AgencyOurProject"));
 import ProjectHeroSection from "../components/common/ProjectHeroSection";
 import ProjectFooterSection from "../components/common/ProjectFooterSection";
 import useScrollTriggerAfterLoad from "../components/hooks/useScrollTriggerAfterLoad";
@@ -739,9 +738,11 @@ function WorkInfo() {
           </div>
           {data?.AgencyourProjectImages && (
             <div style={{ opacity: 0 }} className="main_content_hide_gsap">
-              {/* <Suspense fallback={null}> */}
-              <AgencyOurProject projectImages={data?.AgencyourProjectImages} />
-              {/* </Suspense> */}
+              <Suspense fallback={null}>
+                <AgencyOurProject
+                  projectImages={data?.AgencyourProjectImages}
+                />
+              </Suspense>
             </div>
           )}
         </section>

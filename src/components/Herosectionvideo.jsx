@@ -11,15 +11,22 @@ function Herosectionvideo({ type, syncRef }) {
   const videoRef = type === "background" ? syncRef : localRef;
 
   useEffect(() => {
-    if (type === "inline" && syncRef?.current && videoRef.current) {
-      const syncEl = syncRef.current;
-      const sync = () => {
-        videoRef.current.currentTime = syncEl.currentTime;
-      };
-      syncEl.addEventListener("timeupdate", sync);
-      return () => syncEl.removeEventListener("timeupdate", sync);
-    }
-  }, [type, syncRef, videoRef]);
+    if (!syncRef?.current || !videoRef.current) return;
+
+    const master = syncRef.current;
+    const slave = videoRef.current;
+
+    const play = () => slave.play();
+    const pause = () => slave.pause();
+
+    master.addEventListener("play", play);
+    master.addEventListener("pause", pause);
+
+    return () => {
+      master.removeEventListener("play", play);
+      master.removeEventListener("pause", pause);
+    };
+  }, [syncRef]);
   // insure both video play same time logic ends here
 
   return (
