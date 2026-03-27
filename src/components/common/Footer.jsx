@@ -7,15 +7,11 @@ import { privacyLinks } from "../../Data/PrivacyLinksData";
 import { socialsLinks } from "../../Data/SocialsLinksData";
 import useTorontoClock from "../hooks/useTorontoClock";
 import { useBackToTop } from "../hooks/useBackToTop";
-import { ReadyContext } from "../../context/ReadyContext";
-import { useContext } from "react";
 import { useActiveOnClickOutside } from "../hooks/useActiveOnClickOutside";
-import { useNavigate } from "react-router-dom";
+
 gsap.registerPlugin(ScrollToPlugin);
 
 function Footer() {
-  const navigate = useNavigate();
-
   // logic for clock start here
   const time = useTorontoClock();
   // logic for clock ends here
@@ -23,7 +19,6 @@ function Footer() {
   // back to top animation start here
   useBackToTop();
   // back to top animation end here
-  const { setReady } = useContext(ReadyContext);
 
   const backToTopRef = useRef(null);
   const contentRef = useRef(null);
@@ -71,10 +66,6 @@ function Footer() {
           <Link to={"/en/contact"}>
             <button
               type="button"
-              // onClick={() => {
-              //   navigate("/en/contact");
-              //   setReady(false);
-              // }}
               className="flex items-center justify-center text-[14vw] md:text-[10vw]  group uppercase font-[Lausanne2]   font-medium text-white px-4 md:px-[1.2rem] pt-[0.6rem] md:pt-[0.8rem] xl:pt-2 pb-0 border-2 border-white rounded-[28px] md:rounded-[40px] leading-[10.7vw] md:leading-[7.6vw]   transition-all ease-in  hover:text-[#d3fd50] hover:border-[#d3fd50] cursor-pointer "
             >
               contact
