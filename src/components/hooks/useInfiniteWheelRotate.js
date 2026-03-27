@@ -16,6 +16,9 @@ export function useInfiniteWheelRotate({ containerRef }) {
       container.appendChild(section.cloneNode(true));
     });
 
+    // force tu reset
+    window.scrollTo(0, 0);
+
     let currentY = 0;
     let targetY = 0;
     let lastDir = 0; // -1 or 1

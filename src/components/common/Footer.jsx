@@ -46,7 +46,7 @@ function Footer() {
         ))}
       </div>
       <div className="contact hidden lg:block ml-auto mr-auto mt-auto relative  bottom-16 xl:absolute  xl:mt-0 xl:top-2 right-4 xl:mr-0 xl:bottom-0">
-        <Link to={"/en/contact"} onClick={() => setReady(false)}>
+        <Link to={"/en/contact"}>
           <button
             type="button"
             className="flex items-center justify-center --contact group text-[14vw] md:text-[10vw] xl:text-[5vw] uppercase font-[Lausanne2] --border --radius font-medium text-white px-4 md:px-[1.2rem] lg:px-6 pt-[0.6rem] md:pt-[0.8rem] lg:pt-4 2xl:pt-5 3xl:pt-8 pb-0 border-2 border-white rounded-[28px] md:rounded-[40px] 3xl:rounded-[72px]  lg:leading-[7.5vw] xl:leading-[3.75vw] 2xl:leading-[3.5vw] transition-all ease-in  hover:text-[#d3fd50] hover:border-[#d3fd50] cursor-pointer   "
@@ -68,28 +68,30 @@ function Footer() {
 
       <div className="menu_footer_legals_policy_links_container absolute p-[8.75px] lg:p-[9.375px] 2xl:p-2.5 3xl:p-3 bottom-0 left-0 flex flex-col lg:flex-row items-start md:items-center justify-center lg:grid  lg:grid-cols-4    md:px-2 xl:px-2.5 gap-2 lg:gap-0  w-full   ">
         <div className="contact m-auto mb-[0.8rem] lg:hidden">
-          <button
-            type="button"
-            onClick={() => {
-              navigate("/en/contact");
-              setReady(false);
-            }}
-            className="flex items-center justify-center text-[14vw] md:text-[10vw]  group uppercase font-[Lausanne2]   font-medium text-white px-4 md:px-[1.2rem] pt-[0.6rem] md:pt-[0.8rem] xl:pt-2 pb-0 border-2 border-white rounded-[28px] md:rounded-[40px] leading-[10.7vw] md:leading-[7.6vw]   transition-all ease-in  hover:text-[#d3fd50] hover:border-[#d3fd50] cursor-pointer "
-          >
-            contact
-            <svg
-              className="w-[3.125rem] h-[2.75rem]  group-hover:fill-[#d3fd50] transition-all ease-in md:h-16 md:w-[5.125rem]   2xl:h-34 3xl:h-48 inline-block text-black -mt-2 shrink-0"
-              width="160"
-              height="140"
-              viewBox="0 0 160 140"
-              xmlns="http://www.w3.org/2000/svg"
+          <Link to={"/en/contact"}>
+            <button
+              type="button"
+              // onClick={() => {
+              //   navigate("/en/contact");
+              //   setReady(false);
+              // }}
+              className="flex items-center justify-center text-[14vw] md:text-[10vw]  group uppercase font-[Lausanne2]   font-medium text-white px-4 md:px-[1.2rem] pt-[0.6rem] md:pt-[0.8rem] xl:pt-2 pb-0 border-2 border-white rounded-[28px] md:rounded-[40px] leading-[10.7vw] md:leading-[7.6vw]   transition-all ease-in  hover:text-[#d3fd50] hover:border-[#d3fd50] cursor-pointer "
             >
-              <path
-                d="M80 130 L20 70  L20 40 L55 10 L80 35 L105 10 L140 40 L140 70 Z "
-                fill="#ffffff"
-              />
-            </svg>
-          </button>
+              contact
+              <svg
+                className="w-[3.125rem] h-[2.75rem]  group-hover:fill-[#d3fd50] transition-all ease-in md:h-16 md:w-[5.125rem]   2xl:h-34 3xl:h-48 inline-block text-black -mt-2 shrink-0"
+                width="160"
+                height="140"
+                viewBox="0 0 160 140"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M80 130 L20 70  L20 40 L55 10 L80 35 L105 10 L140 40 L140 70 Z "
+                  fill="#ffffff"
+                />
+              </svg>
+            </button>
+          </Link>
         </div>
         <div className="clock_time  justify-self-start   m-auto lg:m-0 lg:col-span-1">
           <span className="outer_span flex items-center justify-center gap-3 text-[15px] xl:text-[16px] 2xl:text-[20px] --outer_span 3xl:text-[25px]  uppercase font-[Lausanne2] font-medium text-white">
