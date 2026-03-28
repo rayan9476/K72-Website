@@ -13,6 +13,18 @@ export default function useScrollToTop() {
       window.history.scrollRestoration = "manual";
     }
 
+    const lenis = window.__lenis;
+
+    if (lenis) {
+      lenis.stop();
+      lenis.scrollTo(0, { immediate: true, force: true });
+    }
+
+    // immediate native reset before lenis
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+
     const scrollToTop = () => {
       const lenis = window.__lenis;
 
@@ -24,10 +36,18 @@ export default function useScrollToTop() {
     // Wait for next paint + Lenis ready
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
-        scrollToTop();
+        // immediate native reset just before lenis
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
 
-        // Refresh after  scroll is applied
+        if (lenis) {
+          lenis.scrollTo(0, { immediate: true, force: true });
+          lenis.start(); // resume lenis after reset
+        }
         setTimeout(() => {
+          if (lenis) lenis.scrollTo(0, { immediate: true, force: true });
+          scrollToTop();
           ScrollTrigger.clearScrollMemory();
           ScrollTrigger.refresh();
         }, 100);

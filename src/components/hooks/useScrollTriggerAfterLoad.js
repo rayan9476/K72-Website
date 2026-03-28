@@ -1,12 +1,17 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useIsHoverDevice } from "./useIsHoverDevice";
 
 export default function useScrollTriggerAfterLoad(data) {
   const location = useLocation();
 
+  // is hover logic start here
+  const isHover = useIsHoverDevice();
+  // is hover logic ends here
+
   useEffect(() => {
-    if (!data) return;
+    if (!data && !isHover) return;
 
     let killed = false;
 
@@ -81,7 +86,7 @@ export default function useScrollTriggerAfterLoad(data) {
     return () => {
       killed = true;
     };
-  }, [data, location.pathname]);
+  }, [data, isHover, location.pathname]);
 
   useEffect(() => {
     const handlePageShow = (e) => {
