@@ -11,7 +11,8 @@ export default function useScrollTriggerAfterLoad(data) {
   // is hover logic ends here
 
   useEffect(() => {
-    if (!data && !isHover) return;
+    if (!isHover) return;
+    if (!data) return;
 
     let killed = false;
 
