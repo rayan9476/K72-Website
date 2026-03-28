@@ -71,7 +71,6 @@ function ProjectInfoCenterCardSection2({ cardsImages }) {
     <>
       <div
         ref={wrapper}
-        style={{ opacity: 0 }}
         className="c-section main_content_hide_gsap my-[4.375rem] 2xl:my-[15rem] center-card-my 3xl:my-[18.75rem]"
       >
         <div

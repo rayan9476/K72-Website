@@ -172,4 +172,8 @@
   }
 }
 
-
+@media (hover: hover) {
+  .main_content_hide_gsap {
+    opacity: 0;
+  }
+}

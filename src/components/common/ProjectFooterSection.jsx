@@ -60,7 +60,6 @@ function ProjectFooterSection({ data }) {
     <>
       <div
         ref={footerRef}
-        style={{ opacity: 0 }}
         className="footer_section footer_wow main_content_hide_gsap  pt-8 lg:pt-12 pb-[4.375rem]  md:pb-[13.125rem] xl:pb-[16.25rem]"
       >
         <div className="c-project_footer ">

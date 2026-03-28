@@ -46,7 +46,7 @@ function ProjectInfoCenterCardSection({ cardsImages }) {
           loop
           playsInline
           src={url}
-          className="h-full w-full object-cover "
+          className="h-full w-full object-cover bg-[rgba(0,0,0,0.1)]"
         />
       );
     }
@@ -57,7 +57,7 @@ function ProjectInfoCenterCardSection({ cardsImages }) {
         <img
           ref={ImageRef}
           src={url}
-          className={`is-inview -lazy-loaded  w-full h-full ${
+          className={`is-inview -lazy-loaded  w-full h-full bg-[rgba(0,0,0,0.1)] ${
             !isHover ? "object-cover" : media?.objectFit || "object-cover"
           } ${scrollImage}`}
           style={{
@@ -119,7 +119,7 @@ function ProjectInfoCenterCardSection({ cardsImages }) {
                     <img
                       src={card?.images?.[1]?.large}
                       alt="cardsImage"
-                      className={`is-inview -lazy-loaded  w-full h-full ${
+                      className={`is-inview -lazy-loaded  w-full h-full bg-[rgba(0,0,0,0.1)] ${
                         !isHover
                           ? "object-cover"
                           : card?.images?.[1]?.objectFit || "object-cover"
@@ -148,7 +148,7 @@ function ProjectInfoCenterCardSection({ cardsImages }) {
                     <img
                       src={card?.images?.[3]?.large}
                       alt="cardsImage"
-                      className={`is-inview -lazy-loaded  w-full h-full ${
+                      className={`is-inview -lazy-loaded  w-full h-full bg-[rgba(0,0,0,0.1)] ${
                         !isHover
                           ? "object-cover"
                           : card?.images?.[3]?.objectFit || "object-cover"

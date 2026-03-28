@@ -575,10 +575,7 @@ function WorkInfo() {
                   )}
 
                   {data?.projectInfoCenterCard && (
-                    <div
-                      style={{ opacity: 0 }}
-                      className="relative main_content_hide_gsap"
-                    >
+                    <div className="relative main_content_hide_gsap">
                       <ProjectInfoCenterCardSection
                         cardsImages={data?.projectInfoCenterCard}
                       />
@@ -737,7 +734,7 @@ function WorkInfo() {
             </div>
           </div>
           {data?.AgencyourProjectImages && (
-            <div style={{ opacity: 0 }} className="main_content_hide_gsap">
+            <div className="main_content_hide_gsap">
               <Suspense fallback={null}>
                 <AgencyOurProject
                   projectImages={data?.AgencyourProjectImages}
