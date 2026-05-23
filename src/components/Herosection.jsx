@@ -3,21 +3,37 @@ import { Link } from "react-router-dom";
 import useHeroSectionAnimation from "./hooks/useHeroSectionAnimation";
 
 function Herosection({ bgVideoRef }) {
-  // hero section animation start here
+  // hero section animation astart here
   useHeroSectionAnimation();
   // hero section animation ends here
 
   return (
     <>
       <section className="hero-section relative flex  items-end justify-center w-full h-screen ">
-        <div className="text-header pb-64 md:pb-[19rem] lg:absolute lg:top-0 lg:mb-0 flex flex-col items-center justify-center  2xl:mb-[6.3rem] --hero-mb 3xl:mb-0">
-          <span className="text-[12vw] lg:text-[9.5vw]  overflow-hidden text-white font-[Lausanne] uppercase  leading-[11.8vw] lg:leading-[9.5vw] xl:leading-[9vw] ">
+        <div className="text-header  pb-64 md:pb-[19rem] lg:absolute lg:top-0 lg:mb-0 flex flex-col items-center justify-center  2xl:mb-[6.3rem] --hero-mb 3xl:mb-0">
+          <span
+            className="text-[clamp(48px,12vw,220px)]
+lg:text-[clamp(70px,9.5vw,180px)]
+3xl:text-[clamp(100px,10.5vw,220px)]  overflow-hidden text-white font-[Lausanne] uppercase 
+ leading-[clamp(48px,11vw,200px)]
+lg:leading-[clamp(70px,9vw,170px)]
+3xl:leading-[clamp(100px,9.1vw,200px)] break-words"
+          >
             <div className="animationtext flex transform translate-y-[-400px] opacity-0 ">
               {" "}
               The spark for
             </div>
           </span>
-          <span className=" flex items-start justify-center overflow-hidden text-[12vw] lg:text-[9.5vw] text-white font-[Lausanne] uppercase  leading-[11.8vw] lg:leading-[9.5vw]  xl:leading-[9vw]  ">
+
+          <span
+            className=" flex items-start justify-center overflow-hidden 
+           text-[clamp(48px,12vw,220px)]
+lg:text-[clamp(70px,9.5vw,180px)]
+3xl:text-[clamp(100px,10.5vw,220px)] text-white font-[Lausanne] uppercase  
+leading-[clamp(48px,11vw,200px)]
+lg:leading-[clamp(70px,9vw,170px)]
+3xl:leading-[clamp(100px,9.1vw,200px)] break-words "
+          >
             <div className="animationtext  flex items-start justify-center transform translate-y-[-200px] opacity-0">
               all
               <div>
@@ -29,13 +45,23 @@ function Herosection({ bgVideoRef }) {
 
           <span className="relative flex items-center justify-center  w-full text-[12vw] lg:text-[9.5vw] text-white font-[Lausanne] uppercase  leading-[11.8vw] lg:leading-[9.5vw] xl:leading-[7vw] ">
             <div className="animationtext   transform translate-y-[-200px] opacity-0">
-              <div className="overflow-hidden block pt-[0.05em]">
+              <div className="overflow-hidden block pt-[0.05em] xl:pt-[0.07em]">
                 <span className="animationtext transform translate-y-[-200px] opacity-0 inline-block">
                   creative
                 </span>
               </div>
               <div
-                className="c-circle  absolute w-[58.4vw]  xl:w-[47vw] -top-[0.3rem] md:-top-2 xl:-top-[1.7rem] 2xl:-top-8 3xl:-top-[3.3rem]"
+                className="c-circle  absolute 
+
+                w-[clamp(219px,55vw,420px)]
+md:w-[clamp(350px,57vw,520px)]
+lg:w-[clamp(420px,45vw,460px)]
+xl:w-[clamp(260px,46vw,1203px)]
+
+                
+                
+                
+                -top-[0.3rem] md:-top-2 xl:-top-[1.7rem] 2xl:-top-8 3xl:-top-[3.3rem]"
                 data-module-circle="home"
               >
                 <svg

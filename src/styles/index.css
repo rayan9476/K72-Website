@@ -9,6 +9,30 @@
   height: 100%;
 }
 
+::selection {
+  background: transparent;
+  color: inherit;
+}
+
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+span::selection,
+a::selection,
+li::selection,
+label::selection,
+blockquote::selection,
+strong::selection,
+em::selection,
+div::selection,
+button::selection {
+  background-color: #d3fd50;
+  color: black;
+}
 html,
 body,
 #root {

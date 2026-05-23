@@ -21,18 +21,18 @@ function Blog() {
   const { filteredData1, filteredData2 } = useBlogFilterByQuery(activeFilter);
   // filtering  logic ends here
 
+  //  dynamic page name change  logic start here
+  useLayoutEffect(() => {
+    document.title = "Blog — K72 Agency";
+  }, []);
+  //  dynamic page name change  logic ends here
+
   // fake scroll bar logic start here
   const thumbRef = useRef(null);
   useFakeScrollbar(thumbRef, {
     bgColor: "#7F7F7F",
   });
   // fake scroll bar logic ends here
-
-  //  dynamic page name change  logic start here
-  useLayoutEffect(() => {
-    document.title = "Blog — K72 Agency";
-  }, []);
-  //  dynamic page name change  logic ends here
 
   return (
     <>

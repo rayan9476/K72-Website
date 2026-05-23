@@ -126,8 +126,8 @@ export const agencyTeamMembersListImages = [
   {
     id: 25,
     image:
-      // "https://ik.imagekit.io/rayan8422/agency_team-member_blank.webp?tr=f-auto,w-640,h-960,q-60",
-      "https://ik.imagekit.io/rayan8422/gemini_zoomed3.jpg?tr=f-auto,w-640,h-960,q-60",
+      "https://ik.imagekit.io/rayan8422/agency_team-member_blank.webp?tr=f-auto,w-640,h-960,q-60",
+
     alt: " blank.webp",
   },
   {

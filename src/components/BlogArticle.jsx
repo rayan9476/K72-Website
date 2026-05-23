@@ -23,13 +23,13 @@ function BlogArticle({ blogData }) {
       {blogData?.map((item, index) => (
         <article
           key={item.id}
-          className="c-blog-list_el  flex flex-col gap-[0.73828125rem] mb-[2.734375rem] lg:mb-[4.6875rem] xl:mb-20 3xl:mb-[6.25rem] h-full w-full"
+          className="c-blog-list_el  flex flex-col gap-[0.73828125rem] mb-[2.734375rem] lg:mb-[4.6875rem] xl:mb-20 3xl:mb-[6.25rem] h-full w-full md:w-1/2"
         >
           <Link
             to={`/en/blog/${normalize(item?.title)}`}
             className={`c-blog-list_el_inner ${item.hover ? "group/card" : ""}`}
           >
-            <figure className="c-blog-list_el_image   w-full  md:aspect-[705/476] relative  ">
+            <figure className="c-blog-list_el_image  w-full  md:aspect-[705/476] relative  ">
               <div
                 className={`c-blog-list_el_image_inner rounded-[50px]  overflow-hidden object-cover  h-full w-full  ${
                   item.hover ? "group/image" : ""
@@ -44,7 +44,7 @@ function BlogArticle({ blogData }) {
                   <img
                     className={
                       item.hover
-                        ? "w-full h-full object-cover  [transform:scale3d(1,1,1)] transition-[transform] duration-[500ms] ease-[cubic-bezier(0.215,0.61,0.355,1)]  group-hover/image:[transform:scale3d(1.05,1.05,1)]"
+                        ? "w-full h-full object-cover [transform:scale3d(1,1,1)] transition-[transform] duration-[500ms] ease-[cubic-bezier(0.215,0.61,0.355,1)]  group-hover/image:[transform:scale3d(1.05,1.05,1)]"
                         : "w-full h-full object-cover  "
                     }
                     src={item.image}

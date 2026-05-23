@@ -3,12 +3,7 @@ import { useRef } from "react";
 import { useLogoFillAnimation } from "./hooks/useLogoFillAnimation";
 import { Link } from "react-router-dom";
 
-export default function NavbarLogo({
-  hoveredIndex,
-  cardcontainerHover,
-  white,
-  ismenuOpen,
-}) {
+export default function NavbarLogo({ hoveredIndex, white, ismenuOpen }) {
   const siteLogoRef = useRef(null);
 
   // logo fill animation start here
@@ -20,7 +15,8 @@ export default function NavbarLogo({
   // logo fill animation ends here
 
   // animation for navbar left logo for cardinfo component start here
-  useNavbarLogoAnimation({ hoveredIndex, cardcontainerHover, siteLogoRef });
+
+  useNavbarLogoAnimation({ hoveredIndex, siteLogoRef });
   // animation for navbar left logo for cardinfo component end here
 
   return (

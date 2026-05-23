@@ -90,6 +90,7 @@ export function useFakeScrollbar(thumbRef, options = {}) {
       }
 
       if (fadeTween) fadeTween.kill();
+      gsap.killTweensOf(thumbRef.current);
     };
   }, [bgColor, thumbRatio, fadeDelay, location.pathname, isHover, thumbRef]);
 }

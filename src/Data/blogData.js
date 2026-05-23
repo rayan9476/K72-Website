@@ -2,10 +2,10 @@ export const blogData = [
   {
     id: 1,
     href: "/en/blog",
-    // image: "/assets/images/blog_page_article_img.jpg",
+
     image:
       "https://ik.imagekit.io/rayan8422/blog_page_article_img.jpg?tr=f-auto,w-1200,q-60",
-    // small: "/assets/images/blog_page_article_img.webp",
+
     small:
       "https://ik.imagekit.io/rayan8422/blog_page_article_img.jpg?tr=f-auto,w-720,h-480,q-60",
     placeholder:
@@ -50,11 +50,10 @@ export const blogData = [
   {
     id: 2,
     href: "/en/blog",
-    // image: "/assets/images/blog_page_article_2_img.jpg",
+
     image:
       "https://ik.imagekit.io/rayan8422/blog_page_article_2_img.jpg?tr=f-auto,w-1200,q-60",
 
-    // small: "/assets/images/blog_page_article_2_img.webp",
     small:
       "https://ik.imagekit.io/rayan8422/blog_page_article_2_img.jpg?tr=f-auto,w-720,h-480,q-60",
     placeholder:
@@ -82,12 +81,14 @@ export const blogData2 = [
   {
     id: 3,
     href: "/en/blog",
-    // image: "/assets/images/blog_page_article_3_img.jpg",
     image:
-      "https://ik.imagekit.io/rayan8422/blog_page_article_3_img.jpg?tr=f-auto,w-1200,q-60",
+      // "https://ik.imagekit.io/rayan8422/blog_page_article_3_img.jpg?tr=f-auto,w-1200,q-60",
+      "https://ik.imagekit.io/rayan8422/blog_page_article_2_img.jpg?tr=f-auto,w-1200,q-60",
+
     small:
-      "https://ik.imagekit.io/rayan8422/blog_page_article_3_img.jpg?tr=f-auto,w-720,h-480,q-60",
-    // small: "/assets/images/blog_page_article_3_img.webp",
+      // "https://ik.imagekit.io/rayan8422/blog_page_article_3_img.jpg?tr=f-auto,w-720,h-480,q-60",
+      "https://ik.imagekit.io/rayan8422/blog_page_article_2_img.jpg?tr=f-auto,w-1200,q-60",
+
     placeholder:
       "https://ik.imagekit.io/rayan8422/blog_page_article_3_img.jpg?tr=f-auto,w-20,q-10,bl-6",
 
@@ -121,47 +122,50 @@ export const blogData2 = [
     tags: [{ label: "Account", slug: "account" }],
     hover: true,
   },
-  {
-    id: 4,
-    href: "/en/blog",
-    image:
-      "https://ik.imagekit.io/rayan8422/blog_page_article_3_img.jpg?tr=f-auto,w-1200,q-60",
+  // {
+  //   id: 4,
+  //   href: "/en/blog",
+  //   image:
+  //     // "https://ik.imagekit.io/rayan8422/blog_page_article_3_img.jpg?tr=f-auto,w-1200,q-60",
+  //     "https://ik.imagekit.io/rayan8422/blog_page_article_img.jpg?tr=f-auto,w-1200,q-60",
 
-    small:
-      "https://ik.imagekit.io/rayan8422/blog_page_article_3_img.jpg?tr=f-auto,w-720,h-480,q-60",
-    placeholder:
-      "https://ik.imagekit.io/rayan8422/blog_page_article_3_img.jpg?tr=f-auto,w-20,q-10,bl-6",
+  //   small:
+  //     // "https://ik.imagekit.io/rayan8422/blog_page_article_3_img.jpg?tr=f-auto,w-720,h-480,q-60",
+  //     "https://ik.imagekit.io/rayan8422/blog_page_article_img.jpg?tr=f-auto,w-1200,q-60",
 
-    imageAlt: "blog_page_article_3_img.jpg",
-    date: "May 9 2025",
-    title:
-      "Conseil & relation client: un duo qui ne se briefe pas, qui se construit",
-    title2: [
-      "   Conseil & relation    ",
-      "client: un duo qui ne  ",
-      "se briefe pas, qui se  ",
-      "construit  ",
-    ],
+  //   placeholder:
+  //     "https://ik.imagekit.io/rayan8422/blog_page_article_3_img.jpg?tr=f-auto,w-20,q-10,bl-6",
 
-    title3: [
-      "   Conseil & relation client: un   ",
-      "duo qui ne se briefe pas, qui se ",
-      " construit ",
-    ],
-    title4: [
-      "  Conseil & relation  ",
-      "client: un duo qui ne se  ",
-      "briefe pas, qui se ",
-      "construit ",
-    ],
-    title5: [
-      "   Conseil & relation client: un duo  ",
-      "qui ne se briefe pas, qui se   ",
-      "construit  ",
-    ],
-    tags: [{ label: "Account", slug: "account" }],
-    hover: true,
-  },
+  //   imageAlt: "blog_page_article_3_img.jpg",
+  //   date: "May 9 2025",
+  //   title:
+  //     "Conseil & relation client: un duo qui ne se briefe pas, qui se construit",
+  //   title2: [
+  //     "   Conseil & relation    ",
+  //     "client: un duo qui ne  ",
+  //     "se briefe pas, qui se  ",
+  //     "construit  ",
+  //   ],
+
+  //   title3: [
+  //     "   Conseil & relation client: un   ",
+  //     "duo qui ne se briefe pas, qui se ",
+  //     " construit ",
+  //   ],
+  //   title4: [
+  //     "  Conseil & relation  ",
+  //     "client: un duo qui ne se  ",
+  //     "briefe pas, qui se ",
+  //     "construit ",
+  //   ],
+  //   title5: [
+  //     "   Conseil & relation client: un duo  ",
+  //     "qui ne se briefe pas, qui se   ",
+  //     "construit  ",
+  //   ],
+  //   tags: [{ label: "Account", slug: "account" }],
+  //   hover: true,
+  // },
 ];
 
 export const filters = [
