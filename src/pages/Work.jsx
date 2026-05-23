@@ -32,7 +32,7 @@ function Work() {
 
   const [hoveredIndex, setHoveredIndex] = useState(false); // numeric for aimation true/fasle
   const [hoveredImage, setHoveredImage] = useState(null); // store index for change info based on index
-  const [cardcontainerHover, setcardcontainerHover] = useState(false);
+
   // card info blink animation start here
   useHoverBlink(hoveredIndex, hoveredImage, images);
   // card info blink animation ends here
@@ -54,10 +54,7 @@ function Work() {
       </div>
 
       <header>
-        <Navbar
-          hoveredIndex={hoveredIndex}
-          cardcontainerHover={cardcontainerHover}
-        />
+        <Navbar hoveredIndex={hoveredIndex} />
       </header>
       <main className="work_page_container bg-white">
         <Suspense fallback={null}>
@@ -78,53 +75,29 @@ function Work() {
               </h1>
             </div>
 
-            <div
-              className={`lol mb-4  relative    `}
-              onMouseEnter={() => setcardcontainerHover(true)}
-              onMouseLeave={() => setcardcontainerHover(false)}
-            >
+            <div className={`lol mb-4  relative    `}>
               {images.map((img, i) => (
                 <div
                   key={i}
-                  className={`card_container contain-layout-paint h-full lg:h-[359px]  relative    xl:h-[469px]  2xl:h-[583px] 3xl:h-[946px]   flex flex-col md:flex-row items-center md:items-start justify-center gap-4 md:gap-2 lg:gap-2.5 3xl:gap-3 mb-4 w-full md:mt-2   origin-top`}
+                  className={`card_container  h-full lg:h-[359px]  relative    xl:h-[469px]  2xl:h-[583px] 3xl:h-[946px]   flex flex-col md:flex-row items-center md:items-start justify-center gap-4 md:gap-2 lg:gap-2.5 3xl:gap-3 mb-4 w-full md:mt-2   origin-top`}
                 >
-                  {(i === 2 && (
-                    <WorkCards
-                      index={i}
-                      image1={img.image1}
-                      image2={img.image2}
-                      onHoverStart1={() => {
-                        setHoveredIndex(true);
-                        setHoveredImage({ index: i, side: 1 });
-                      }}
-                      onHoverStart2={() => {
-                        setHoveredIndex(true);
-                        setHoveredImage({ index: i, side: 2 });
-                      }}
-                      onHoverEnd={() => {
-                        setHoveredIndex(false);
-                        setHoveredImage(null);
-                      }}
-                    />
-                  )) || (
-                    <WorkCards
-                      index={i}
-                      image1={img.image1}
-                      image2={img.image2}
-                      onHoverStart1={() => {
-                        setHoveredIndex(true);
-                        setHoveredImage({ index: i, side: 1 });
-                      }}
-                      onHoverStart2={() => {
-                        setHoveredIndex(true);
-                        setHoveredImage({ index: i, side: 2 });
-                      }}
-                      onHoverEnd={() => {
-                        setHoveredIndex(false);
-                        setHoveredImage(null);
-                      }}
-                    />
-                  )}
+                  <WorkCards
+                    index={i}
+                    image1={img.image1}
+                    image2={img.image2}
+                    onHoverStart1={() => {
+                      setHoveredIndex(true);
+                      setHoveredImage({ index: i, side: 1 });
+                    }}
+                    onHoverStart2={() => {
+                      setHoveredIndex(true);
+                      setHoveredImage({ index: i, side: 2 });
+                    }}
+                    onHoverEnd={() => {
+                      setHoveredIndex(false);
+                      setHoveredImage(null);
+                    }}
+                  />
                 </div>
               ))}
             </div>

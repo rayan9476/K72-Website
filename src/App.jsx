@@ -46,7 +46,7 @@ function App() {
     }
 
     const lenis = new Lenis({
-      lerp: 0.04,
+      lerp: 0.08,
       smoothWheel: true,
       smoothTouch: false,
       keyboard: false,
@@ -61,9 +61,8 @@ function App() {
     };
 
     // scroll listener for key events
-    window.addEventListener("keydown", (e) => {
+    const handleKeyDown = (e) => {
       const step = 120;
-
       if (
         [
           "ArrowDown",
@@ -77,19 +76,18 @@ function App() {
       ) {
         e.preventDefault();
       }
-
       if (e.key === "ArrowDown")
         lenis.scrollTo(lenis.scroll + step, { duration: 0.6 });
       if (e.key === "ArrowUp")
         lenis.scrollTo(lenis.scroll - step, { duration: 0.6 });
-
       if (e.key === "PageDown" || e.key === " ")
         lenis.scrollTo(lenis.scroll + window.innerHeight);
       if (e.key === "PageUp") lenis.scrollTo(lenis.scroll - window.innerHeight);
-
       if (e.key === "Home") lenis.scrollTo(0);
       if (e.key === "End") lenis.scrollTo(document.body.scrollHeight);
-    });
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
 
     rafRef.current = requestAnimationFrame(raf);
 
@@ -99,7 +97,7 @@ function App() {
       if (rafRef.current) {
         cancelAnimationFrame(rafRef.current);
       }
-
+      window.removeEventListener("keydown", handleKeyDown);
       lenisRef.current = null;
       delete window.__lenis;
     };

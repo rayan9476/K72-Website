@@ -5,7 +5,7 @@ import NavbarLinks from "../NavbarLinks";
 const NavbarCloseIcon = lazy(() => import("../NavbarCloseIcon"));
 import useNavbarAnimation from "../hooks/useNavbarAnimation";
 
-function Navbar({ hoveredIndex, cardcontainerHover }) {
+function Navbar({ hoveredIndex }) {
   const [ismenuOpen, setismenuOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
   // navbar animation start here
@@ -18,11 +18,7 @@ function Navbar({ hoveredIndex, cardcontainerHover }) {
   return (
     <>
       <nav className="Navbar fixed  flex items-start justify-between p-2 lg:p-2  xl:p-2.5 w-full z-40  ">
-        <NavbarLogo
-          hoveredIndex={hoveredIndex}
-          cardcontainerHover={cardcontainerHover}
-          ismenuOpen={ismenuOpen}
-        />
+        <NavbarLogo hoveredIndex={hoveredIndex} ismenuOpen={ismenuOpen} />
 
         <div className="absolute -z-10 top-0 h-full w-full  flex  items-start justify-end ">
           <NavbarLinks ismenuOpen={ismenuOpen} setismenuOpen={setismenuOpen} />
@@ -35,11 +31,7 @@ function Navbar({ hoveredIndex, cardcontainerHover }) {
         }  w-full flex items-start justify-between p-2 lg:p-2  xl:p-2.5  z-50  `}
       >
         <div className="">
-          <NavbarLogo
-            hoveredIndex={hoveredIndex}
-            cardcontainerHover={cardcontainerHover}
-            ismenuOpen={ismenuOpen}
-          />
+          <NavbarLogo hoveredIndex={hoveredIndex} ismenuOpen={ismenuOpen} />
         </div>
 
         <Suspense fallback={null}>
