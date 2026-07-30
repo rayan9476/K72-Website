@@ -73,3 +73,16 @@ src/
 - Route-level code splitting with `React.lazy` + `Suspense` — only loads what's needed
 - **React Compiler** (`babel-plugin-react-compiler`) handles automatic memoization — no manual `memo`/`useMemo`/`useCallback`
 - CSS minified with **cssnano** at build time — removes whitespace, merges rules, and deduplicates declarations
+
+
+---
+
+## Author
+
+Built by **Rayyan** — Full Stack Developer based in Karachi, Pakistan.
+
+- Fiverr: [fiverr.com/yourusername](https://fiverr.com/yourusername)
+- GitHub: [github.com/rayan9476](https://github.com/rayan9476)
+- Email: hellorayyan.dev@gmail.com
+
+  
