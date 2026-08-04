@@ -110,7 +110,7 @@ function Footer() {
                 className={`
         text-[10.5px] md:text-[12.25px] lg:text-[13.125px] xl:text-[14px] --menu_nav_span 3xl:text-[17.25px]
         uppercase font-[Lausanne2] font-medium transition-colors ease-in cursor-pointer
-          ${onclick ? (contentActive ? "text-[#d3fd50]" : "text-white") : "text-white"}
+          ${onclick ? (contentActive === label ? "text-[#d3fd50]" : "text-white") : "text-white"}
         hover:text-[#d3fd50]
       `}
               >
