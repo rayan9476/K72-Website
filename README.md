@@ -232,7 +232,7 @@ This project is a commercial portfolio template. You may:
 
 ---
 
-## Author
+## 👤 Author
 
 Built by **Rayyan** — Full Stack Developer based in Karachi, Pakistan.
 
