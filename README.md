@@ -76,7 +76,7 @@ src/
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=8B5CF6,7C3AED,6D28D9&height=160&section=header&text=K72%20Agency&fontSize=72&fontColor=fff&animation=twinkling&fontAlignY=38&desc=Creative%20Agency%20Portfolio&descAlignY=58&descAlign=50" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=8B5CF6,7C3AED,6D28D9&height=160&section=header&text=K72%20Agency&fontSize=72&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Creative%20Agency%20Portfolio&descAlignY=52&descAlign=50" width="100%"/>
 
 # K72 Agency — Creative Portfolio
 
